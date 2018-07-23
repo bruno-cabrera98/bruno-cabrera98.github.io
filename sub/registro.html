@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Bruno Cabrera">
+  <meta name="description" content="Página de registro del proyecto de Jóvenes a Programar.">
+  <link rel="stylesheet" href="../styles/stylesheet.css">
+  <title>Entrega 1 - Registro</title>
+</head>
+
+<body>
+  <header>
+    <div id="logo">
+      <a href="../index.html">
+        <img src="../img/header.svg" alt="Logo de la web">
+      </a>
+    </div>
+    <nav>
+      <a href="../index.html">Inicio</a>
+      <a href="catalogo.html">Catálogo</a>
+      <a href="consultas.html">Consultas</a>
+      <a href="registro.html">Registro</a>
+    </nav>
+
+  </header>
+  <main>
+    <h1>
+      Registrarse
+    </h1>
+    <p>Por favor, complete este formulario para registrarse</p>
+    <form action="algo" method="post">
+      <div>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre-usuario" required maxlength="30">
+      </div>
+      <div>
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido-usuario" required maxlength="30">
+      </div>
+      <div>
+        <label for="mail">E-mail:</label>
+        <input type="email" id="mail" name="mail-usuario" required>
+      </div>
+      <div>
+        <label for="contraseña">Contraseña:</label>
+        <input type="password" id="contraseña" name="contraseña-usuario" required pattern="[A-Za-z0-9]{8,24}">
+      </div>
+      <div>
+        <label for="r-contraseña">Repita contraseña:</label>
+        <input type="password" id="r-contraseña" name="r-contraseña-usuario" required pattern="[A-Za-z0-9]{8,24}">
+      </div>
+      <div class="button">
+        <button type="submit">Registrarse</button>
+      </div>
+    </form>
+  </main>
+</body>
+
+</html>

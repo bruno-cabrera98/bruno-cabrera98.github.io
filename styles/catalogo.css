@@ -1,0 +1,58 @@
+#barra-categorias{
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 160px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  right: 0;
+  background-color: #373634; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding: 20px;
+  color: honeydew;
+}
+
+#barra-categorias div{
+  display: block;
+}
+
+.contenedor-grid{
+  display: grid; 
+  grid-template-columns: auto auto auto auto; 
+  justify-content: center;
+}
+
+.bloque-grid{
+  border-radius: 15px 15px 15px 15px;
+  background-color: honeydew;
+  width: 200px; 
+  height: 200px; 
+  margin-right: 40px; 
+  margin-bottom: 40px;
+  box-shadow: 0 5px 10px #4d5f80;
+}
+
+.bloque-grid a{
+  display:inline-block;
+  width:100%;
+  height:100%;
+  text-decoration: none;
+}
+
+.bloque-grid p{
+  display: inline-block;
+  color: #373634;
+  height: 10%;
+  width: 100%;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  text-align: center;
+  margin: 0px 0px;
+}
+
+
+.bloque-grid img{
+  display: block;
+  min-height: 70%;
+  width: 100%;
+  margin: auto;
+}

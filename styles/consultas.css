@@ -1,0 +1,26 @@
+.caja-comentario{
+  background-color: honeydew;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+.usuario{
+  display: inline-block;
+  background-color: grey;
+  border-radius: 10px 40px 40px 40px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.usuario img{
+  height: 50px;
+}
+
+.usuario p{
+  float: inline-end;
+  margin-left: 10px ;
+}
+
