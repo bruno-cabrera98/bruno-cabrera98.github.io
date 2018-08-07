@@ -7,6 +7,7 @@
   <meta name="description" content="Página inicio del proyecto de Jóvenes a Programar.">
   <link rel="stylesheet" href="styles/stylesheet.css">
   <link rel="stylesheet" href="styles/inicio.css">
+  <script src="js/slideshow.js"></script>
   <title>Entrega 1 - Inicio</title>
 </head>
 
@@ -18,7 +19,7 @@
       </a>
     </div>
     <nav class="menu">
-      <a href="index.html">Inicio</a>
+      <a href="index.html" id="apretado">Inicio</a>
       <a href="sub/catalogo.html">Catálogo</a>
       <a href="sub/consultas.html">Consultas</a>
       <a href="sub/registro.html">Registro</a>
@@ -58,6 +59,8 @@
       </div>
 
     </div>
+    <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
   </main>
 
 

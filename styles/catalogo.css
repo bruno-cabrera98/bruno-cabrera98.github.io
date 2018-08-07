@@ -5,7 +5,7 @@
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   right: 0;
-  background-color: #373634; /* Black */
+  background-color: #4F4F4F;
   overflow-x: hidden; /* Disable horizontal scroll */
   padding: 20px;
   color: honeydew;
@@ -22,13 +22,18 @@
 }
 
 .bloque-grid{
+  list-style: none;
   border-radius: 15px 15px 15px 15px;
-  background-color: honeydew;
+  background-color: #F5F7F8;
   width: 200px; 
   height: 200px; 
   margin-right: 40px; 
   margin-bottom: 40px;
-  box-shadow: 0 5px 10px #4d5f80;
+  box-shadow: 0 0px 10px  #BDCAD5;
+}
+
+.bloque-grid:hover{
+  filter: brightness(1.2);
 }
 
 .bloque-grid a{

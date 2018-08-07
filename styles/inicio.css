@@ -1,14 +1,10 @@
 .contenedor{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
   overflow: auto;
   align-items: center;
 }
 
 .bloque-juego{
   text-align: center;
-  display:inline-block;
   background-color: honeydew;
   margin-right: 20px;
 }

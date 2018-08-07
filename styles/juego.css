@@ -15,8 +15,9 @@
   padding: 10px;
   float: right;
   width: 200px;
-  background-color: honeydew;
+  background-color: #F5F7F8;
   border-radius: 10%;
+  box-shadow: 0px 0px 10px #BDCAD5;
 }
 
 .columna-der img{
@@ -25,10 +26,11 @@
 }
 
 #compra a{
-  background-color: greenyellow;
+  background-color: #4D81AC;
+  box-shadow:  0px 0px 10px #BDCAD5;
   text-decoration: none;
-  color: darkslategray;
-  padding: 3px;
+  color: #F5F7F8;
+  padding: 5px;
   border-radius: 10px;
   float: right;
 }

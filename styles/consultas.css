@@ -1,14 +1,21 @@
 .caja-comentario{
-  background-color: honeydew;
+  background-color: #F5F7F8;
+  box-shadow: 0 0 10px inset #E6E6E6, 0 0 5px -3px #7C7C7C;
   border-radius: 10px;
   padding: 10px;
   margin-bottom: 5px;
 }
 
+.comentario{
+  padding: 0px 10px 0px 10px;
+}
+
 .usuario{
-  display: inline-block;
-  background-color: grey;
+  display: -webkit-inline-box;
+  background-color: #7C7C7C;
+  color: #F5F7F8;
   border-radius: 10px 40px 40px 40px;
+  box-shadow: 0 0 10px #BDCAD5;
   padding-right: 10px;
   padding-left: 10px;
   padding-bottom: 5px;
@@ -17,10 +24,19 @@
 
 .usuario img{
   height: 50px;
+  width: 50px;
 }
 
 .usuario p{
   float: inline-end;
   margin-left: 10px ;
 }
+
+input, textarea{
+    display: block;
+    width: 30%;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
 
