@@ -1,4 +1,85 @@
+h1{
+  margin-top: 0px;
+  margin-left: 10px;
+}
+
+form{
+  margin: 0 10px;
+}
+
+p{
+  margin: 20px 10px;
+}
+
 input{
   display: block;
-  margin-bottom:10px; 
+  width: 40%;
+  margin: 8px 0;
+  box-sizing: border-box;
+  resize: none;
+  border-style: none;
+  border-radius: 10px;
+  padding: 10px;
+  font-family: inherit;
+  font-size: inherit;
+  background-color: var(--color1);
+  box-shadow: 0 0 4px var(--color3) inset;
+  transition: 0.2s;
+}
+
+input:hover{
+  box-shadow: 0 0 10px var(--color3) inset;
+}
+
+input:focus{
+  box-shadow: 0 0 4px var(--color5) inset;
+}
+
+button{
+  display: block;
+  font-family: inherit;
+  font-size: inherit;
+  border-style: none;
+  padding: 10px 20px;
+  background-color: var(--color1);
+  box-shadow: 0 5px 5px var(--color3);
+  border-radius: 10px;
+  transition: all 0.2s;
+}
+
+button:hover{
+  box-shadow: 0 2px 2px var(--color3);
+}
+
+button:focus{
+  box-shadow: 0 2px 2px var(--color3) inset;
+}
+
+@media only screen and (max-width: 600px){
+  form{
+    display: block;
+    padding: 5px;
+  }
+  input{
+    width: 100%;
+  }
+  button{
+    width: 50%;
+    margin:auto;
+  }
+}
+
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  form{
+    display: block;
+    padding: 5px;
+  }
+  input{
+    width: 100%;
+  }
+  button{
+    width: 50%;
+    margin:auto;
+  }
 }

@@ -27,70 +27,89 @@
   </header>
   <main>
     <div id="info">
-      <h2>
-        The curse of
-      </h2>
-      <h1>
-        Monkey Island
-      </h1>
-      <div id="estrellas">
-        <a href="#1">
-          <img src="img/estrella-amarilla.svg" alt="estrella">
-        </a>
-        <a href="#2">
-          <img src="img/estrella-amarilla.svg" alt="estrella">
-        </a>
-        <a href="#3">
-          <img src="img/estrella-amarilla.svg" alt="estrella">
-        </a>
-        <a href="#4">
-          <img src="img/estrella-amarilla.svg" alt="estrella">
-        </a>
-        <a href="#5">
-          <img src="img/estrella-amarilla.svg" alt="estrella">
-        </a>
-        <a href="#6">
-          <img src="img/estrella-amarilla.svg" alt="estrella">
-        </a>
-        <a href="#7">
-          <img src="img/estrella-amarilla.svg" alt="estrella">
-        </a>
-        <a href="#8">
-          <img src="img/estrella-amarilla.svg" alt="estrella">
-        </a>
-        <a href="#9">
-          <img src="img/estrella-amarilla.svg" alt="estrella">
-        </a>
-        <a href="#10">
-          <img src="img/estrella-gris.svg" alt="estrella">
-        </a>
-        <p>- 9/10 estrellas</p>
+      <div id="titulo">
+        <h2>
+          The curse of
+        </h2>
+        <h1>
+          Monkey Island
+        </h1>
       </div>
-      <div id="detalles">
-        <p>
-          Aventura - Point-and-click - Fantasia
-        </p>
-        <p>
-          Sistemas Operativos: Windows (7, 8, 10) y Mac OS X (10.9+)
-        </p>
-      </div>
-    </div>
-    <div class="columna-der">
-      <img src="img/c-o-monkey-island-portada.jpg">
-      <div id="compra">
-        <p>Precio: $15.99
-          <a href="#compra">Comprar!</a>
-        </p>
-      </div>
-    </div>
+      <div class="columna-der">
+        <h3>The curse of Monkey Island</h3>
+        <img src="img/c-o-monkey-island-portada.jpg" alt="foto de portada">
+          <div class="info_columna">
+            <div id="estrellas">
+              <a href="#1">
+                <img src="img/estrella-amarilla.svg" alt="estrella">
+              </a>
+              <a href="#2">
+                <img src="img/estrella-amarilla.svg" alt="estrella">
+              </a>
+              <a href="#3">
+                <img src="img/estrella-amarilla.svg" alt="estrella">
+              </a>
+              <a href="#4">
+                <img src="img/estrella-amarilla.svg" alt="estrella">
+              </a>
+              <a href="#5">
+                <img src="img/estrella-amarilla.svg" alt="estrella">
+              </a>
+              <a href="#6">
+                <img src="img/estrella-amarilla.svg" alt="estrella">
+              </a>
+              <a href="#7">
+                <img src="img/estrella-amarilla.svg" alt="estrella">
+              </a>
+              <a href="#8">
+                <img src="img/estrella-amarilla.svg" alt="estrella">
+              </a>
+              <a href="#9">
+                <img src="img/estrella-amarilla.svg" alt="estrella">
+              </a>
+              <a href="#10">
+                <img src="img/estrella-gris.svg" alt="estrella">
+              </a>
+              <p>- 9/10 estrellas</p>
+            </div>
+            <div id="detalles">
+                <p>
+                  Aventura - Point-and-click - Fantasia
+                </p>
+                <p>
+                  Sistemas Operativos: Windows (7, 8, 10) y Mac OS X (10.9+)
+                </p>
+            </div>
+            <div id="compra">
+              <p>Precio: $15.99</p>
+              <button>Comprar!</button>
+            </div>
+          </div>
 
-    <div class="contenedor">
-      <img src="img/c-o-monkey-island-1.jpg" alt="Primer Foto">
-      <img src="img/c-o-monkey-island-2.jpg" alt="Segunda Foto">
-      <img src="img/c-o-monkey-island-3.jpg" alt="Tercera Foto">
-      <img src="img/c-o-monkey-island-4.jpg" alt="Cuarta Foto">
-      <img src="img/c-o-monkey-island-5.jpg" alt="Quinta Foto">
+      </div>
+      <div class="slideshow">
+        <button class="izq" onclick="ant()"></button>
+        <div class="bloques_slide">
+          <img  src="img/c-o-monkey-island-1.jpg" alt="Primer Foto">
+        </div>
+        <div class="bloques_slide">
+            <img  src="img/c-o-monkey-island-2.jpg" alt="Segunda Foto">
+        </div>
+        <div class="bloques_slide">
+            <img  src="img/c-o-monkey-island-3.jpg" alt="Tercera Foto">
+        </div>
+        <div class="bloques_slide">
+            <img  src="img/c-o-monkey-island-4.jpg" alt="Cuarta Foto">
+        </div>
+        <div class="bloques_slide">
+            <img  src="img/c-o-monkey-island-5.jpg" alt="Quinta Foto">
+        </div>
+        <button class="der" onclick="sig()"></button>
+      </div>
     </div>
+   
+    <script src="../js/slideshow.js"></script>
+
     <article>
       <header>
         <h2>
@@ -112,7 +131,7 @@
         </p>
       </body>
     </article>
-    <div class="caja-specs">
+    <article class="caja-specs">
       <p>Requisitos</p>
       <ul>
         <li>Sistema Operativo : Windows (7, 8, 10) y Mac OS X (10.9+)</li>
@@ -120,9 +139,9 @@
         <li>Memoria: 1 GB RAM</li>
         <li>Internet: No requiere</li>
         <li>Grafica: Tarjeta gráfica 3D compatible con DirectX 9.0c y 256 MB VRAM</li>
-        <li>Almacenamiento: 1GB available space</li>
+        <li>Almacenamiento: 1GB </li>
       </ul>
-    </div>
+    </article>
   </main>
 </body>
 

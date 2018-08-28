@@ -7,7 +7,6 @@
   <meta name="description" content="Página inicio del proyecto de Jóvenes a Programar.">
   <link rel="stylesheet" href="styles/stylesheet.css">
   <link rel="stylesheet" href="styles/inicio.css">
-  <script src="js/slideshow.js"></script>
   <title>Entrega 1 - Inicio</title>
 </head>
 
@@ -28,42 +27,65 @@
   <main>
     <h1>Bienvenidos a Jap Games!</h1>
     <h3>Juegos destacados de esta semana</h3>
-    <div class="contenedor">
-      <div class="bloque-juego">
-        <a href="juegos/monkey-island.html">
-          <p>The Curse of Monkey Island</p>
-          <img src="img/monkey-island.jpg">
-          <p>OFERTA $15.99</p>
-        </a>
-      </div>
-      <div class="bloque-juego">
-        <a href="juegos/space-questI.html">
-          <p>Space Quest I</p>
-          <img src="img/space-questI.jpg">
-          <p>OFERTA $10.99</p>
-        </a>
-      </div>
-      <div class="bloque-juego">
-        <a href="juegos/space-questII.html">
-          <p>Space Quest II</p>
-          <img src="img/space-questII.jpg">
-          <p>OFERTA $12.99</p>
-        </a>
-      </div>
-      <div class="bloque-juego">
-        <a href="juegos/space-questIII.html">
-          <p>Space Quest III</p>
-          <img src="img/space-questIII.jpg">
-          <p>OFERTA $16.99</p>
-        </a>
-      </div>
+    <div class="slideshow">
+      <div class="bloques_slide">
+        <img src="img/monkey-island.jpg">
+        <div class="info">
+          <h3>Monkey Island</h3>
+          <p>El juego comienza en una isla caribeña llamada Monkey Island, donde un joven llamado Guybrush Threepwood quiere
+            ser pirata. Para ello, busca a los líderes pirata de la zona, quienes le encomiendan tres desafíos que le permitirán
+            convertirse en uno de ellos: derrotar a Carla, la maestra de esgrima, en un duelo de espadas e insultos; robar
+            una estatua de la mansión de la Gobernadora; y encontrar un tesoro enterrado.
 
+            <p>Categoria 1 - Categoria 2 - Categoria 3</p>
+            <p>Windows - Linux</p>
+            <p>$16.99</p>
+        </div>
+      </div>
+      <div class="bloques_slide">
+        <img src="img/space-questI.jpg">
+        <div class="info">
+          <h3>Space Quest I</h3>
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+          <p>Categoria 1 - Categoria 2 - Categoria 3</p>
+          <p>Windows - Linux</p>
+          <p>$17.99</p>
+        </div>
+      </div>
+      <div class="bloques_slide">
+        <img src="img/space-questII.jpg">
+        <div class="info">
+          <h3>Space Quest II</h3>
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+          <p>Categoria 1 - Categoria 2 - Categoria 3</p>
+          <p>Windows - Linux</p>
+          <p>$18.99</p>
+        </div>
+      </div>
+      <div class="bloques_slide">
+        <img src="img/space-questIII.jpg">
+        <div class="info">
+          <h3>Space Quest III</h3>
+          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+          <p>Categoria 1 - Categoria 2 - Categoria 3</p>
+          <p>Windows - Linux</p>
+          <p>$19.99</p>
+        </div>
+      </div>
+      <button class="izq" onclick="ant()"></button>
+      <button class="der" onclick="sig()"></button>
     </div>
-    <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-    <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+    <script src="js/slideshow.js"></script>
   </main>
-
-
 </body>
 
 </html>

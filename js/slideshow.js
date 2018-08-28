@@ -1,21 +1,29 @@
-var slideIndex = 1;
-showDivs(slideIndex);
+var posicion = 1;
+var bloques = document.getElementsByClassName("bloques_slide");
+bloques[0].style.display = "block";
 
-function plusDivs(n) {
-    showDivs(slideIndex += n);
+
+
+function sig(){
+    bloques[posicion-1].style.display = "none";
+    if (posicion < bloques.length){
+        bloques[posicion].style.display = "block"
+        posicion++;
+    }
+    else{
+        bloques[0].style.display ="block";
+        posicion = 1;
+    }
 }
 
-function showDivs(n) {
-    var i;
-    var x = document.getElementsByClassName("bloque-juego");
-    if (n > x.length) {
-      slideIndex = 1;
-    } ;
-    if (n < 1) {
-      slideIndex = x.length;
-    } ;
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
+function ant(){
+    bloques[posicion-1].style.display = "none";
+    if (posicion != 1){
+        bloques[posicion-2].style.display = "block"
+        posicion--;
     }
-    x[slideIndex-1].style.display = "block";
+    else{
+        bloques[bloques.length - 1].style.display ="block";
+        posicion = bloques.length;
+    }
 }

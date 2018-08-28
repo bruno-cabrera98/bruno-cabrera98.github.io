@@ -1,22 +1,114 @@
-.contenedor{
-  overflow: auto;
-  align-items: center;
+h1,h3{
+  margin-top: 0px;
+  margin-left: 10px;
 }
 
-.bloque-juego{
-  text-align: center;
-  background-color: honeydew;
-  margin-right: 20px;
+.slideshow{
+  margin: 0px 10px;
+  position: relative;
 }
 
-.bloque-juego img{
-  height: 200px;
-}
-
-.bloque-juego a{
-  text-decoration: none;
-  color: darkslategrey;
-  height: 100%;
+.bloques_slide{
+  display: none;
   width: 100%;
-  display:inline-block;
+  height: 320px;
+  background-color: var(--color1);
+  border-radius: 10px;
 }
+
+.bloques_slide img{
+  height: 100%;
+  border-radius: 10px 0 0 10px;
+  max-width: 50%;
+  
+}
+
+.info{
+  position:absolute;
+  margin: 0 20px;
+  display: inline-block;
+  max-width: 45%;
+  text-align: justify;
+  font-size: 0.9em;
+}
+
+.info h3{
+  margin: 10px 0;
+}
+
+button{
+  border-style: none;
+  background-color: var(--color4);
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: 35px;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  border-radius: 0 3px 3px 0;
+}
+
+.der{
+  right: -35px;
+  border-radius: 0 10px 10px 0;
+}
+
+.izq{
+  left: -35px;
+  border-radius: 10px 0 0 10px;
+}
+
+@media only screen and (max-width: 600px){
+  .info{
+    display: none;
+  }
+  .bloques_slide{
+    width: 90%;
+    height: auto;
+    margin: auto;
+  }
+  .bloques_slide img{
+    max-width: 100%;
+    border-radius: 10px;
+  }
+
+  
+  .izq{
+    left:0px;
+  }
+  .der{
+    right: 0px;
+  }
+  
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .bloques_slide{
+    width: 100%;
+  }
+  .bloques_slide img{
+    float: right;
+    display: block;
+    margin: auto;
+    max-width: 30%;
+    height: auto;
+    border-radius: 10px;
+  }
+  .info{
+    display: block;
+    max-width: 60%;
+    float: none;
+  }
+  .izq{
+    left: 100px;
+    top: 100%;
+  }
+  .der{
+    right: 100px;
+    top:100%;
+  }
+}
+
+
+

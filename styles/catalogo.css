@@ -1,63 +1,195 @@
-#barra-categorias{
-  height: 100%; /* Full-height: remove this if you want "auto" height */
-  width: 160px; /* Set the width of the sidebar */
-  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
-  right: 0;
-  background-color: #4F4F4F;
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding: 20px;
-  color: honeydew;
+h1{
+  margin-top: 0px;
+  margin-left: 10px;
 }
 
-#barra-categorias div{
+.desplegador p{
+  display: block;
+  margin: 0px 0px 20px 10px;
+  padding: 10px;
+  border-radius: 40px;
+  background-color: var(--color1);
+  cursor: pointer;
+  font-size: 17px;
+  box-shadow: 0 4px 4px var(--color3);
+  transition: 0.2s;
+}
+
+.desplegador{
+  position: relative;
+  display: inline-block;
+}
+
+.desplegador ul{
+  display: none;
+  position: absolute;
+  background-color: var(--color1);
+  min-width: 140px;
+  box-shadow: 0px 0px 10px -3px var(--color3);
+  z-index: 1;
+  margin-top: 0px;
+  margin-left: 10px;
+  padding: 10px;
+  border-radius: 20px
+}
+
+.desplegador li{
+  margin: 10px 0px;
+  text-decoration: none;
   display: block;
 }
 
-.contenedor-grid{
-  display: grid; 
-  grid-template-columns: auto auto auto auto; 
-  justify-content: center;
+.desplegador:hover p{
+  box-shadow: 0 4px 10px var(--color3);
+  background-color: var(--color3)
 }
 
-.bloque-grid{
+.desplegador:hover ul {
+  display: block;
+}
+
+#buscador{
+  height: 43px;
+  display: block;
+  float: right;
+  border-radius: 40px;
+  background-color: var(--color1);
+  box-shadow: 0 4px 4px var(--color3);
+  width: 320px;
+  margin-right: 10px;
+  transition: 0.2s;
+}
+
+#buscador:hover{
+  box-shadow: 0 4px 10px var(--color3);
+}
+
+#buscador img{
+  background-color: var(--color1);
+  border-radius: 100% 0 0 100%;
+  float: left;
+  height: 43px;
+  width: 43px;
+  transition: 0.2s;
+}
+
+#buscador img:hover{
+  background-color: var(--color3);
+  cursor: pointer;
+}
+
+#buscador input{
+  float: left;
+  border-style: none;
+  height: 23px;
+  margin: 0px 0px 0px 0px;
+  padding: 10px;
+  background-color: var(--color1);
+  font-size: 17px;
+  
+}
+
+/*Catalogo*/
+
+.contenedor{
+  text-align: center;
+  margin-top: 30px;
+  padding: 0 0 0 0;
+  width: 100%;
+}
+
+.bloque{
+  display: inline-block;
+  border-radius: 10px;
   list-style: none;
-  border-radius: 15px 15px 15px 15px;
-  background-color: #F5F7F8;
-  width: 200px; 
-  height: 200px; 
-  margin-right: 40px; 
-  margin-bottom: 40px;
-  box-shadow: 0 0px 10px  #BDCAD5;
+  background-color: var(--color1);
+  width: 240px;
+  margin: 10px;
+  box-shadow: 0 0px 10px var(--color3);
+  transition: 0.5s;
 }
 
-.bloque-grid:hover{
-  filter: brightness(1.2);
+.bloque:hover {
+  filter: brightness(1.1);
+  box-shadow: 0 0px 100px var(--color3);
 }
 
-.bloque-grid a{
-  display:inline-block;
+.bloque a{
+  display: inline-block;
   width:100%;
   height:100%;
   text-decoration: none;
+  color: var(--color4);
 }
 
-.bloque-grid p{
-  display: inline-block;
-  color: #373634;
-  height: 10%;
-  width: 100%;
-  padding-bottom: 5px;
-  padding-top: 5px;
+.bloque h1{
+  font-size: 1em;
   text-align: center;
+  margin: 5px;
+}
+
+.bloque img{
+  width: 100%;
   margin: 0px 0px;
 }
 
-
-.bloque-grid img{
-  display: block;
-  min-height: 70%;
-  width: 100%;
-  margin: auto;
+.info{
+  margin: 0px 10px;
+  text-align: center;
 }
+
+.categoria{
+  text-align: center;
+  font-size: 0.8em;
+}
+
+.precio{
+  color: var(--color1);
+  display: inline-block;
+  text-align: center;
+  margin: 0px;
+  padding: 10px;
+  background-color: var(--color5);
+  border-radius: 20px 20px 0px 0;
+  box-shadow: 0 0px 5px var(--color3);
+}
+
+@media screen and (max-width: 600px){
+  .bloque{
+    margin: 10px auto;
+    width: 90%;
+  }
+  
+  .desplegador{
+    display: block;
+    text-align: center;
+    margin: auto;
+    width: 90%;
+  }
+  .desplegador ul{
+    margin: 0;
+    padding: 0px;
+    width: 100%;
+  }
+  .desplegador p{
+    margin: 10px 0;
+  }
+  #buscador{
+    display: block;
+    float: none;
+    margin: auto;
+    width: 90%;
+  }
+  
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  #buscador{
+    width: 30%
+  }
+  #buscador input{
+    width: 45%
+  }
+}
+
+

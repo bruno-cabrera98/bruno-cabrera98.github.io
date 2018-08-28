@@ -52,8 +52,8 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35355339"
-     inkscape:cx="822.42854"
+     inkscape:zoom="0.5"
+     inkscape:cx="504.23049"
      inkscape:cy="131.11287"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
@@ -75,7 +75,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -84,29 +84,81 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(125.15778,-66.705933)">
-    <text
-       xml:space="preserve"
+    <g
+       aria-label="Jap Games"
        style="font-style:normal;font-weight:normal;font-size:24.0575943px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.60143983"
-       x="-125.30721"
-       y="107.05454"
-       id="text22"><tspan
-         sodipodi:role="line"
-         id="tspan20"
-         x="-125.30721"
-         y="107.05454"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:51.32287216px;line-height:11.45000076;font-family:envypn7x13;-inkscape-font-specification:envypn7x13;stroke-width:0.60143983">Jap Games</tspan></text>
-    <text
-       xml:space="preserve"
+       id="text22">
+      <path
+         d="m -113.50295,77.800505 h 11.85558 v 31.614885 h -15.80744 v -3.95186 h -3.95186 v -3.95186 h 3.95186 v 3.95186 h 11.85558 V 81.752367 h -7.90372 v 3.951861 h -3.95186 v -3.951861 h 3.95186 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:51.32287216px;line-height:11.45000076;font-family:envypn7x13;-inkscape-font-specification:envypn7x13;stroke-width:0.60143983"
+         id="path19" />
+      <path
+         d="m -89.888817,85.704228 h 15.807444 v 23.711162 h -15.807444 v -3.95186 h -3.951861 V 89.656089 h 3.951861 z m 0,3.951861 v 15.807441 h 11.855583 V 89.656089 Z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:51.32287216px;line-height:11.45000076;font-family:envypn7x13;-inkscape-font-specification:envypn7x13;stroke-width:0.60143983"
+         id="path21" />
+      <path
+         d="m -62.322821,85.704228 h 11.855583 v 3.951861 h 3.951862 v 15.807441 h -3.951862 v 3.95186 h -11.855583 v 7.90373 h -3.951861 V 89.656089 h 3.951861 z m 0,3.951861 v 15.807441 h 11.855583 V 89.656089 Z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:51.32287216px;line-height:11.45000076;font-family:envypn7x13;-inkscape-font-specification:envypn7x13;stroke-width:0.60143983"
+         id="path23" />
+      <path
+         d="M -7.1908287,77.800505 H 4.6647548 v 3.951862 h 3.9518611 v 3.951861 H 4.6647548 V 81.752367 H -7.1908287 v 23.711163 h 7.9037223 v -3.95186 H 4.6647548 V 97.559811 H 0.7128936 V 93.60795 h 7.9037223 v 15.80744 H 4.6647548 v -3.95186 H 0.7128936 v 3.95186 h -7.9037223 v -3.95186 H -11.14269 V 81.752367 h 3.9518613 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:51.32287216px;line-height:11.45000076;font-family:envypn7x13;-inkscape-font-specification:envypn7x13;stroke-width:0.60143983"
+         id="path25" />
+      <path
+         d="M 20.375173,85.704228 H 36.182618 V 109.41539 H 20.375173 v -3.95186 H 16.423312 V 89.656089 h 3.951861 z m 0,3.951861 V 105.46353 H 32.230757 V 89.656089 Z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:51.32287216px;line-height:11.45000076;font-family:envypn7x13;-inkscape-font-specification:envypn7x13;stroke-width:0.60143983"
+         id="path27" />
+      <path
+         d="m 47.941167,85.704228 h 11.855584 v 3.951861 h 3.951861 V 109.41539 H 59.796751 V 89.656089 H 55.84489 V 101.51167 H 51.893029 V 89.656089 H 47.941167 V 109.41539 H 43.989306 V 89.656089 h 3.951861 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:51.32287216px;line-height:11.45000076;font-family:envypn7x13;-inkscape-font-specification:envypn7x13;stroke-width:0.60143983"
+         id="path29" />
+      <path
+         d="m 75.507162,85.704228 h 11.855583 v 3.951861 h 3.951861 v 7.903722 h -3.951861 v 3.951859 H 75.507162 v 3.95186 h 15.807444 v 3.95186 H 75.507162 v -3.95186 H 71.555301 V 89.656089 h 3.951861 z m 0,3.951861 v 7.903722 h 11.855583 v -7.903722 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:51.32287216px;line-height:11.45000076;font-family:envypn7x13;-inkscape-font-specification:envypn7x13;stroke-width:0.60143983"
+         id="path31" />
+      <path
+         d="m 103.07316,85.704228 h 15.80744 v 3.951861 h -15.80744 v 3.951861 h 11.85558 v 3.951861 h 3.95186 v 7.903719 h -3.95186 v 3.95186 H 99.121295 v -3.95186 H 114.92874 V 97.559811 H 103.07316 V 93.60795 h -3.951865 v -3.951861 h 3.951865 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:51.32287216px;line-height:11.45000076;font-family:envypn7x13;-inkscape-font-specification:envypn7x13;stroke-width:0.60143983"
+         id="path33" />
+    </g>
+    <g
+       aria-label="Jap Games"
+       transform="matrix(2.2731587,0,0,2.2731587,-156.41024,-154.88435)"
        style="font-style:normal;font-weight:normal;font-size:10.58333302px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#a7a7a7;fill-opacity:1;stroke:none;stroke-width:0.26458332;filter:url(#filter1667)"
-       x="13.731222"
-       y="115.4394"
-       id="text22-4"
-       transform="matrix(2.2731587,0,0,2.2731587,-156.41024,-154.88435)"><tspan
-         sodipodi:role="line"
-         id="tspan20-5"
-         x="13.731222"
-         y="115.4394"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.57777786px;line-height:11.45000076;font-family:envypn7x13;-inkscape-font-specification:envypn7x13;fill:#a7a7a7;fill-opacity:1;stroke-width:0.26458332">Jap Games</tspan></text>
+       id="text22-4">
+      <path
+         d="m 18.924111,102.57007 h 5.215467 v 13.90791 h -6.953956 v -1.73849 H 15.447133 V 113.001 h 1.738489 v 1.73849 h 5.215467 v -10.43093 h -3.476978 v 1.73848 h -1.738489 v -1.73848 h 1.738489 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.57777786px;line-height:11.45000076;font-family:envypn7x13;-inkscape-font-specification:envypn7x13;fill:#a7a7a7;fill-opacity:1;stroke-width:0.26458332"
+         id="path36" />
+      <path
+         d="m 29.312358,106.04704 h 6.953955 v 10.43094 h -6.953955 v -1.73849 h -1.738489 v -6.95396 h 1.738489 z m 0,1.73849 v 6.95396 h 5.215467 v -6.95396 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.57777786px;line-height:11.45000076;font-family:envypn7x13;-inkscape-font-specification:envypn7x13;fill:#a7a7a7;fill-opacity:1;stroke-width:0.26458332"
+         id="path38" />
+      <path
+         d="m 41.439094,106.04704 h 5.215466 v 1.73849 h 1.738489 v 6.95396 H 46.65456 v 1.73849 h -5.215466 v 3.47698 h -1.738489 v -12.16943 h 1.738489 z m 0,1.73849 v 6.95396 h 5.215466 v -6.95396 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.57777786px;line-height:11.45000076;font-family:envypn7x13;-inkscape-font-specification:envypn7x13;fill:#a7a7a7;fill-opacity:1;stroke-width:0.26458332"
+         id="path40" />
+      <path
+         d="m 65.692565,102.57007 h 5.215467 v 1.73849 h 1.738488 v 1.73848 h -1.738488 v -1.73848 h -5.215467 v 10.43093 h 3.476978 V 113.001 h 1.738489 v -1.73849 h -1.738489 v -1.73849 h 3.476977 v 6.95396 h -1.738488 v -1.73849 h -1.738489 v 1.73849 h -3.476978 v -1.73849 h -1.738489 v -10.43093 h 1.738489 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.57777786px;line-height:11.45000076;font-family:envypn7x13;-inkscape-font-specification:envypn7x13;fill:#a7a7a7;fill-opacity:1;stroke-width:0.26458332"
+         id="path42" />
+      <path
+         d="m 77.819301,106.04704 h 6.953955 v 10.43094 h -6.953955 v -1.73849 h -1.738489 v -6.95396 h 1.738489 z m 0,1.73849 v 6.95396 h 5.215466 v -6.95396 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.57777786px;line-height:11.45000076;font-family:envypn7x13;-inkscape-font-specification:envypn7x13;fill:#a7a7a7;fill-opacity:1;stroke-width:0.26458332"
+         id="path44" />
+      <path
+         d="m 89.946036,106.04704 h 5.215467 v 1.73849 h 1.738489 v 8.69245 h -1.738489 v -8.69245 h -1.738489 v 5.21547 h -1.738489 v -5.21547 h -1.738489 v 8.69245 h -1.738489 v -8.69245 h 1.738489 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.57777786px;line-height:11.45000076;font-family:envypn7x13;-inkscape-font-specification:envypn7x13;fill:#a7a7a7;fill-opacity:1;stroke-width:0.26458332"
+         id="path46" />
+      <path
+         d="m 102.07277,106.04704 h 5.21546 v 1.73849 h 1.73849 v 3.47698 h -1.73849 v 1.73849 h -5.21546 v 1.73849 h 6.95395 v 1.73849 h -6.95395 v -1.73849 h -1.73849 v -6.95396 h 1.73849 z m 0,1.73849 v 3.47698 h 5.21546 v -3.47698 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.57777786px;line-height:11.45000076;font-family:envypn7x13;-inkscape-font-specification:envypn7x13;fill:#a7a7a7;fill-opacity:1;stroke-width:0.26458332"
+         id="path48" />
+      <path
+         d="m 114.19951,106.04704 h 6.95395 v 1.73849 h -6.95395 v 1.73849 h 5.21546 v 1.73849 h 1.73849 v 3.47698 h -1.73849 v 1.73849 h -6.95395 v -1.73849 h 6.95395 v -3.47698 h -5.21546 v -1.73849 h -1.73849 v -1.73849 h 1.73849 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.57777786px;line-height:11.45000076;font-family:envypn7x13;-inkscape-font-specification:envypn7x13;fill:#a7a7a7;fill-opacity:1;stroke-width:0.26458332"
+         id="path50" />
+    </g>
     <g
        id="g1701"
        transform="translate(4.9097009,9.7369403)"

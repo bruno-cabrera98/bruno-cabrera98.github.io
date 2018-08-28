@@ -23,117 +23,200 @@
       <a href="consultas.html">Consultas</a>
       <a href="registro.html">Registro</a>
     </nav>
-
   </header>
-  <nav id="barra-categorias"> <!--La idea es poder, en esta barra, marcar las categorias y que lo que aparesca en el catálogo se filtre-->
-    <p>Categorias:</p>        
-    <div>
-      <label for="aventura">Aventuras</label>
-      <input type="checkbox" id="aventura" name="genero" value="aventura" checked/> 
-    </div>
-    <div>
-        <label for="point-and-click">Point-and-click</label>
-        <input type="checkbox" id="point-and-click" name="genero" value="point-and-click" checked/>
-    </div>
-    <div>
-      <label for="fantasia">Fantasía</label>
-      <input type="checkbox" id="fantasia" name="genero" value="fantasia" checked/>  
-    </div>
-    <div>
-      <label for="accion">Acción</label>
-      <input type="checkbox" id="accion" name="genero" value="accion"/>  
-    </div>
-  </nav>
   <main>
     <h1>
       Catálogo
     </h1>
-    <ul class="contenedor-grid">
-      <li class="bloque-grid">
-        <a href="../juegos/monkey-island.html">
-          <p>The Curse of Monkey Island</p>
-          <img src="../img/monkey-island.jpg">
-          <p>$ 15.99</p>
-        </a>
-      </li>
-      <li class="bloque-grid">
-        <a href="../juegos/space-questI.html">
-          <p>Space Quest I</p>
-          <img src="../img/space-questI.jpg">
-          <p>$ 11.99</p>
-        </a>
-      </li>
-      <li class="bloque-grid">
-        <a href="../juegos/space-questII.html">
-          <p>Space Quest II</p>
-          <img src="../img/space-questII.jpg">
-          <p>$ 12.99</p>
-        </a>
-      </li>
-      <li class="bloque-grid">
-        <a href="../juegos/space-questIII.html">
-          <p>Space Quest III</p>
-          <img src="../img/space-questIII.jpg">
-          <p>$ 16.99</p>
-        </a>
-      </li>
-      <li class="bloque-grid">
-        <a href="../juegos/monkey-island.html">
-          <p>The Curse of Monkey Island</p>
-          <img src="../img/monkey-island.jpg">
-          <p>$ 15.99</p>
-        </a>
-      </li>
-      <li class="bloque-grid">
-        <a href="../juegos/space-questI.html">
-          <p>Space Quest I</p>
-          <img src="../img/space-questI.jpg">
-          <p>$ 11.99</p>
-        </a>
-      </li>
-      <li class="bloque-grid">
-        <a href="../juegos/space-questII.html">
-          <p>Space Quest II</p>
-          <img src="../img/space-questII.jpg">
-          <p>$ 12.99</p>
-        </a>
-      </li>
-      <li class="bloque-grid">
-        <a href="../juegos/space-questIII.html">
-          <p>Space Quest III</p>
-          <img src="../img/space-questIII.jpg">
-          <p>$ 16.99</p>
-        </a>
-      </li>
-      <li class="bloque-grid">
-        <a href="../juegos/monkey-island.html">
-          <p>The Curse of Monkey Island</p>
-          <img src="../img/monkey-island.jpg">
-          <p>$ 15.99</p>
-        </a>
-      </li>
-      <li class="bloque-grid">
-        <a href="../juegos/space-questI.html">
-          <p>Space Quest I</p>
-          <img src="../img/space-questI.jpg">
-          <p>$ 11.99</p>
-        </a>
-      </li>
-      <li class="bloque-grid">
-        <a href="../juegos/space-questII.html">
-          <p>Space Quest II</p>
-          <img src="../img/space-questII.jpg">
-          <p>$ 12.99</p>
-        </a>
-      </li>
-      <li class="bloque-grid">
-        <a href="../juegos/space-questIII.html">
-          <p>Space Quest III</p>
-          <img src="../img/space-questIII.jpg">
-          <p>$ 16.99</p>
-        </a>
-      </li>
+    <div class="desplegador">
+      <p>Categorias</p>
+      <ul>
+        <li>
+          <label for="aventura">Aventuras</label>
+          <input type="checkbox" id="aventura" name="genero" value="aventura" checked/>
+        </li>
+        <li>
+          <label for="point-and-click">Point-and-click</label>
+          <input type="checkbox" id="point-and-click" name="genero" value="point-and-click" checked/>
+        </li>
+        <li>
+          <label for="fantasia">Fantasía</label>
+          <input type="checkbox" id="fantasia" name="genero" value="fantasia" checked/>
+        </li>
+        <li>
+          <label for="accion">Acción</label>
+          <input type="checkbox" id="accion" name="genero" value="accion" />
+        </li>
+      </ul>
     </div>
+    <div class="desplegador">
+      <p>Sistema Operativo</p>
+      <ul>
+        <li>
+          <label for="windows">Windows</label>
+          <input type="checkbox" id="windows" name="os" value="windows" />
+        </li>
+        <li>
+          <label for="macos">Mac-Os</label>
+          <input type="checkbox" id="macos" name="os" value="macos" />
+        </li>
+        <li>
+          <label for="linux">Linux</label>
+          <input type="checkbox" id="linux" name="os" value="linux" />
+        </li>
+        <li>
+          <label for="dos">Dos</label>
+          <input type="checkbox" id="dos" name="os" value="dos" checked/>
+        </li>
+      </ul>
+    </div>
+    <div class="desplegador">
+      <p>Idioma</p>
+      <ul>
+        <li>
+          <label for="ingles">Inglés</label>
+          <input type="checkbox" id="ingles" name="idioma" value="ingles" checked/>
+        </li>
+        <li>
+          <label for="español">Español</label>
+          <input type="checkbox" id="español" name="idioma" value="español" checked/>
+        </li>
+        <li>
+          <label for="frances">Francés</label>
+          <input type="checkbox" id="frances" name="idioma" value="frances" />
+        </li>
+        <li>
+          <label for="aleman">Alemán</label>
+          <input type="checkbox" id="aleman" name="idioma" value="aleman" />
+        </li>
+      </ul>
+    </div>
+    <div id="buscador">
+      <img src="../img/lupa.svg" alt="Lupa para buscar cosas">
+      <input type="text" placeholder="Buscar...">
+    </div>
+    <ul class="contenedor">
+      <li class="bloque">
+        <a href="../juegos/monkey-island.html">
+          <h1>The Curse of Monkey Island</h1>
+          <img src="../img/monkey-island.jpg" alt="foto de monkey island">
+          <div class="info">
+            <p class="categoria">Aventuras - Point & click - Fantasía</p>
+            <p class="precio">$15.99</p>
+          </div>
+        </a>
+      </li>
+      <li class="bloque">
+        <a href="../juegos/space-quest1.html">
+          <h1>Space Quest I</h1>
+          <img src="../img/space-questI.jpg" alt="foto de space quest 1">
+          <div class="info">
+            <p class="categoria">Aventuras - Point & click - Fantasía</p>
+            <p class="precio">$16.99</p>
+          </div>
+        </a>
+      </li>
+      <li class="bloque">
+        <a href="../juegos/space-quest2.html">
+          <h1>Space Quest II</h1>
+          <img src="../img/space-questII.jpg" alt="foto de space quest 2">
+          <div class="info">
+            <p class="categoria">Aventuras - Point & click - Fantasía</p>
+            <p class="precio">$17.99</p>
+          </div>
+        </a>
+      </li>
+      <li class="bloque">
+        <a href="../juegos/space-quest2.html">
+          <h1>Space Quest III</h1>
+          <img src="../img/space-questIII.jpg" alt="foto de space quest 3">
+          <div class="info">
+            <p class="categoria">Aventuras - Point & click - Fantasía</p>
+            <p class="precio">$18.99</p>
+          </div>
+        </a>
+      </li>
+      <li class="bloque">
+        <a href="../juegos/monkey-island.html">
+          <h1>The Curse of Monkey Island</h1>
+          <img src="../img/monkey-island.jpg" alt="foto de monkey island">
+          <div class="info">
+            <p class="categoria">Aventuras - Point & click - Fantasía</p>
+            <p class="precio">$15.99</p>
+          </div>
+        </a>
+      </li>
+      <li class="bloque">
+        <a href="../juegos/space-quest1.html">
+          <h1>Space Quest I</h1>
+          <img src="../img/space-questI.jpg" alt="foto de space quest 1">
+          <div class="info">
+            <p class="categoria">Aventuras - Point & click - Fantasía</p>
+            <p class="precio">$16.99</p>
+          </div>
+        </a>
+      </li>
+      <li class="bloque">
+        <a href="../juegos/space-quest2.html">
+          <h1>Space Quest II</h1>
+          <img src="../img/space-questII.jpg" alt="foto de space quest 2">
+          <div class="info">
+            <p class="categoria">Aventuras - Point & click - Fantasía</p>
+            <p class="precio">$17.99</p>
+          </div>
+        </a>
+      </li>
+      <li class="bloque">
+        <a href="../juegos/space-quest2.html">
+          <h1>Space Quest III</h1>
+          <img src="../img/space-questIII.jpg" alt="foto de space quest 3">
+          <div class="info">
+            <p class="categoria">Aventuras - Point & click - Fantasía</p>
+            <p class="precio">$18.99</p>
+          </div>
+        </a>
+      </li>
+      <li class="bloque">
+        <a href="../juegos/monkey-island.html">
+          <h1>The Curse of Monkey Island</h1>
+          <img src="../img/monkey-island.jpg" alt="foto de monkey island">
+          <div class="info">
+            <p class="categoria">Aventuras - Point & click - Fantasía</p>
+            <p class="precio">$15.99</p>
+          </div>
+        </a>
+      </li>
+      <li class="bloque">
+        <a href="../juegos/space-quest1.html">
+          <h1>Space Quest I</h1>
+          <img src="../img/space-questI.jpg" alt="foto de space quest 1">
+          <div class="info">
+            <p class="categoria">Aventuras - Point & click - Fantasía</p>
+            <p class="precio">$16.99</p>
+          </div>
+        </a>
+      </li>
+      <li class="bloque">
+        <a href="../juegos/space-quest2.html">
+          <h1>Space Quest II</h1>
+          <img src="../img/space-questII.jpg" alt="foto de space quest 2">
+          <div class="info">
+            <p class="categoria">Aventuras - Point & click - Fantasía</p>
+            <p class="precio">$17.99</p>
+          </div>
+        </a>
+      </li>
+      <li class="bloque">
+        <a href="../juegos/space-quest2.html">
+          <h1>Space Quest III</h1>
+          <img src="../img/space-questIII.jpg" alt="foto de space quest 3">
+          <div class="info">
+            <p class="categoria">Aventuras - Point & click - Fantasía</p>
+            <p class="precio">$18.99</p>
+          </div>
+        </a>
+      </li>
+    </ul>
   </main>
 </body>
 
