@@ -48,6 +48,11 @@ h1{
   display: block;
 }
 
+.desplegador input{
+  float: left;
+  margin-right: 10px;
+}
+
 #buscador{
   height: 43px;
   display: block;

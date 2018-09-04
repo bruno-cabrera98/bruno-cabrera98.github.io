@@ -70,6 +70,7 @@ input, textarea{
   background-color: var(--color1);
   box-shadow: 0 0 4px var(--color3) inset;
   transition: 0.2s;
+  color:var(--color4);
 }
 
 input:hover, textarea:hover{
@@ -90,6 +91,7 @@ button{
   transition: all 0.2s;
   font-family: inherit;
   font-size: inherit;
+  color:var(--color4);
 }
 
 button:hover{

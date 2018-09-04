@@ -25,6 +25,7 @@ input{
   background-color: var(--color1);
   box-shadow: 0 0 4px var(--color3) inset;
   transition: 0.2s;
+  color:var(--color4);
 }
 
 input:hover{
@@ -32,6 +33,7 @@ input:hover{
 }
 
 input:focus{
+  outline: none;
   box-shadow: 0 0 4px var(--color5) inset;
 }
 
@@ -45,6 +47,7 @@ button{
   box-shadow: 0 5px 5px var(--color3);
   border-radius: 10px;
   transition: all 0.2s;
+  color: var(--color4);
 }
 
 button:hover{
