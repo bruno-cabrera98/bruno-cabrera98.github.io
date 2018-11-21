@@ -11,6 +11,7 @@
   <title>Entrega 1 - The Curse of Monkey Island</title>
   <script src="../js/slide.js"></script>
   <script src="../js/carrito.js"></script>
+  <script src="../js/generador.js"></script>
 
 </head>
 
@@ -20,7 +21,7 @@
     <div id="carro">
       <div id="info-carro">
         <img src="img/c-o-monkey-island-portada.jpg" alt="Foto de portada">
-        <h3>The Curse of Monkey Island</h3>
+        <h3 class="titulo"></h3>
 
       </div>
       <button id="cerrar-carro"></button>
@@ -66,7 +67,7 @@
             <label for="email-i">E-mail</label>
             <input type="email" id="email-i" disabled required>
           </div>
-          <div id="direccion" class="cambiante no-input" >
+          <div id="direccion" class="cambiante no-input">
             <label for="direccion-i">Dirección</label>
             <input type="text" id="direccion-i" disabled required>
           </div>
@@ -104,7 +105,7 @@
   </header>
   <main>
     <div id="caja-juego">
-      <h1>The Curse of Monkey Island</h1>
+      <h1 class="titulo"></h1>
       <div id="slide-show">
         <button type="button" id="ant"></button>
         <div id="imagenes">
@@ -119,7 +120,7 @@
       <div id="envoltorio-info">
         <div id="info">
 
-          <h2>The Curse of Monkey Island</h2>
+          <h2 class="titulo"></h2>
           <div id="estrellas">
             <a href="#1">
               <img src="img/estrella-amarilla.svg" alt="estrella">
@@ -176,55 +177,46 @@
       </header>
 
       <body>
-        <p>
-          The Curse of Monkey Island es un videojuego de aventura desarrollado y publicado por LucasArts, y la tercera entrega de la
-          saga de aventura gráfica Monkey Island, creada en los años 90 por Ron Gilbert. Fue continuada en el año 1997 por
-          Jonathan Ackley y Larry Ahern después de la segunda entrega. Este juego es el 12º y último videojuego de LucasArts
-          en usar el motor SCUMM para aventuras gráficas, que fue continuamente mejorado hasta ser reemplazado por el motor
-          GrimE para el siguiente título de la serie, Escape from Monkey Island.
-        </p>
-        <p>
-          En esta tercera historia de piratas, el personaje principal Guybrush Threepwood se ve envuelto en una serie de problemas
-          con su archienemigo pirata zombie LeChuck, después de haber hechizado a su novia por error.
-        </p>
+        <p class="l_desc"></p>
       </body>
     </article>
     <article class="caja-specs">
       <header>
-	<h2>Requisitos</h2>
+        <h2>Requisitos</h2>
       </header>
+
       <body>
-	<dl id="caja-specs-recomendados">
-        <h3>Recomendados</h3>
-	  <dt>Sistema Operativo:</dt>
-	  <dd>Windows (7,8,10) y Mac OS Z (10.9+)</dd>
-	  <dt>CPU:</dt>
-	  <dd>1.8 GHz</dd>
-	  <dt>Memoria Ram:</dt>
-	  <dd>1 GB</dd>
-	  <dt>Internet:</dt>
-	  <dd>No requiere</dd>
-	  <dt>Grafica:</dt>
-	  <dd>Compatible con DirectX 9.0c y 256 MB</dd>
-	  <dt>Almacenamiento:</dt>
-	  <dd>1GB</dd>
-	</dl>
-		<dl id="caja-specs-minimos">
-        <h3>Minimos</h3>
-	  <dt>Sistema Operativo:</dt>
-	  <dd>Windows (7,8,10) y Mac OS Z (10.9+)</dd>
-	  <dt>CPU:</dt>
-	  <dd>1.8 GHz</dd>
-	  <dt>Memoria Ram:</dt>
-	  <dd>1 GB</dd>
-	  <dt>Internet:</dt>
-	  <dd>No requiere</dd>
-	  <dt>Grafica:</dt>
-	  <dd>Compatible con DirectX 9.0c y 256 MB</dd>
-	  <dt>Almacenamiento:</dt>
-	  <dd>1GB</dd>
-	</dl>
-	</body>
+        <dl id="caja-specs-recomendados">
+          <h3>Recomendados</h3>
+          <dt>Sistema Operativo:</dt>
+          <dd>Windows (7,8,10) y Mac OS Z (10.9+)</dd>
+          <dt>CPU:</dt>
+          <dd>1.8 GHz</dd>
+          <dt>Memoria Ram:</dt>
+          <dd>1 GB</dd>
+          <dt>Internet:</dt>
+          <dd>No requiere</dd>
+          <dt>Grafica:</dt>
+          <dd>Compatible con DirectX 9.0c y 256 MB</dd>
+          <dt>Almacenamiento:</dt>
+          <dd>1GB</dd>
+        </dl>
+        <dl id="caja-specs-minimos">
+          <h3>Minimos</h3>
+          <dt>Sistema Operativo:</dt>
+          <dd>Windows (7,8,10) y Mac OS Z (10.9+)</dd>
+          <dt>CPU:</dt>
+          <dd>1.8 GHz</dd>
+          <dt>Memoria Ram:</dt>
+          <dd>1 GB</dd>
+          <dt>Internet:</dt>
+          <dd>No requiere</dd>
+          <dt>Grafica:</dt>
+          <dd>Compatible con DirectX 9.0c y 256 MB</dd>
+          <dt>Almacenamiento:</dt>
+          <dd>1GB</dd>
+        </dl>
+      </body>
     </article>
   </main>
   <footer>

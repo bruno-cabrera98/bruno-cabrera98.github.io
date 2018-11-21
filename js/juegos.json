@@ -3,7 +3,7 @@
         {
             "name": "The Monkey Island",
             "s_desc": "Descripción corta",
-            "l_desc": "Descripción larga",
+            "l_desc": "The Curse of Monkey Island es un videojuego de aventura desarrollado y publicado por LucasArts, y la tercera entrega de la saga de aventura gráfica Monkey Island, creada en los años 90 por Ron Gilbert. Fue continuada en el año 1997 por Jonathan Ackley y Larry Ahern después de la segunda entrega. Este juego es el 12º y último videojuego de LucasArts en usar el motor SCUMM para aventuras gráficas, que fue continuamente mejorado hasta ser reemplazado por el motor GrimE para el siguiente título de la serie, Escape from Monkey Island. En esta tercera historia de piratas, el personaje principal Guybrush Threepwood se ve envuelto en una serie de problemas con su archienemigo pirata zombie LeChuck, después de haber hechizado a su novia por error.",
             "main_picture": "url",
             "other_pictures": [
                 "url2",
