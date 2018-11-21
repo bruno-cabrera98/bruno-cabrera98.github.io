@@ -1,0 +1,40 @@
+{
+    "juegos": [
+        {
+            "name": "The Monkey Island",
+            "s_desc": "Descripción corta",
+            "l_desc": "Descripción larga",
+            "main_picture": "url",
+            "other_pictures": [
+                "url2",
+                "url3",
+                "url4"
+            ],
+            "score": 9,
+            "price": 19.99,
+            "categories": [
+                "cat1",
+                "cat2",
+                "cat3"
+            ],
+            "requirements": {
+                "minimum": {
+                    "os": "os",
+                    "cpu": "cpu",
+                    "ram": "ram",
+                    "internet": "si o no",
+                    "gpu": "gpu",
+                    "space": "space"
+                },
+                "recomended": {
+                    "os": "os",
+                    "cpu": "cpu",
+                    "ram": "ram",
+                    "internet": "si o no",
+                    "gpu": "gpu",
+                    "space": "space"
+                }
+            }
+        }
+    ]
+}
