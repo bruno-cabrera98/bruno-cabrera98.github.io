@@ -27,35 +27,84 @@
   </header>
   <main>
     <h1>Bienvenidos a Jap Games!</h1>
-    <h3>Juegos destacados de esta semana</h3>
-    <div class="slide-show">
-        <div class="capa-slide-show">
-            <div class="caja-grande-slide-show">
-                <img src="img/space-questI.jpg" class="portada">
-                <div class="vidrio-grande">
-                    <img src="img/space-questI.jpg" >
-                </div>
-                <div class="info-grande-slideshow">
-                    <h1 class="nombre-grande-slideshow">
-                        Space Quest I
-					</h1>
-                </div>
-            </div>
-            <div class="caja-chica-slide-show">
-				<img src="img/space-questII.jpg"  class="portada">
-                <div class="vidrio-chico">
-                    <img src="img/space-questII.jpg" >
-                </div>
-                <div class="info-chico-slideshow">
-                    <h1 class="nombre-chico-slideshow">
-                        Space Quest I
-					</h1>
-                </div>
-            </div>
-			<div class="caja-chica-slide-show">
-				<img src="img/space-questIII.jpg" class="portada">
-			</div>
+    <div id="juegos-slider-wrapper">
+      <div id="juegos-destacados" class="juegos-slider">
+        <!--Slider-->
+        <div class="juegos-slider-info">
+          <h3>Juegos destacados</h3>
         </div>
+        <div class="slider">
+          <div class="slider-juego">
+            <img src="img/monkey-island.jpg">
+            <div class="slider-info">
+              <h3>Monkey Island</h3>
+              <p>$19.9</p>
+            </div>
+          </div>
+          <div class="slider-juego"></div>
+          <div class="slider-juego"></div>
+          <div class="slider-juego"></div>
+          <div class="slider-juego"></div>
+        </div>
+      </div>
+      <div id="juegos-nuevos" class="juegos-slider">
+        <!--Slider-->
+        <div class="juegos-slider-info">
+          <h3>Juegos nuevos</h3>
+        </div>
+        <div class="slider">
+          <div class="slider-juego"></div>
+          <div class="slider-juego"></div>
+          <div class="slider-juego"></div>
+          <div class="slider-juego"></div>
+          <div class="slider-juego"></div>
+        </div>
+      </div>
+    </div>
+    <div id="juegos-populares">
+      <!--Lista-->
+      <div id="juegos-populares-info">
+        <h3>Juegos más descargados</h3>
+      </div>
+      <div id="juegos-populares-lista-wrapper">
+        <ul id="juegos-populares-lista">
+          <li class="juegos-populares-lista-juego">
+            <img src="img/monkey-island.jpg">
+            <div class="lista-juego-info">
+              <h4>Monkey Island</h4>
+              <p>$19.9</p>
+            </div>
+          </li>
+          <li class="juegos-populares-lista-juego">
+            <img src="img/monkey-island.jpg">
+            <div class="lista-juego-info">
+              <h4>Monkey Island</h4>
+              <p>$19.9</p>
+            </div>
+          </li>
+          <li class="juegos-populares-lista-juego">
+            <img src="img/monkey-island.jpg">
+            <div class="lista-juego-info">
+              <h4>Monkey Island</h4>
+              <p>$19.9</p>
+            </div>
+          </li>
+          <li class="juegos-populares-lista-juego">
+            <img src="img/monkey-island.jpg">
+            <div class="lista-juego-info">
+              <h4>Monkey Island</h4>
+              <p>$19.9</p>
+            </div>
+          </li>
+          <li class="juegos-populares-lista-juego">
+            <img src="img/monkey-island.jpg">
+            <div class="lista-juego-info">
+              <h4>Monkey Island</h4>
+              <p>$19.9</p>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
   </main>
   <footer>
@@ -63,7 +112,7 @@
       <li><a href="index.html">Inicio</a></li>
       <li><a href="sub/catalogo.html">Catálogo</a></li>
       <li><a href="sub/consultas.html">Consultas</a></li>
-      <li><a href="sub/registro.html">Registro</a></li>  
+      <li><a href="sub/registro.html">Registro</a></li>
     </ul>
     <div class="info-personal">
       <p>Bruno Cabrera Martínez</p>

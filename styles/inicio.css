@@ -3,191 +3,96 @@ h1,h3{
   margin-left: 10px;
 }
 
-.slide-show{
-  height: 495px;
+#juegos-slider-wrapper{
+  float: left;
+  width: 60%;
+}
+
+.juegos-slider{
+  position: relative;
   width: 100%;
+  margin-bottom: 50px;
+  background: var(--azul-claro);
+  border-radius: 10px;
+  box-shadow: -4px -4px 0 var(--azul) inset;
+}
+
+.slider-juego{
+  position: relative;
+}
+
+.slider{
+  position: relative;
+  width: 90%; /*temporal*/
+  margin: auto;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.slider-juego img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.slider-info{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background: var(--gris);
+  border-radius: 0 0 10px 10px;
+  color: var(--blanco);
+}
+
+/*lista*/
+
+#juegos-populares{
+  float: left;
+  width: 35%;
+  background: var(--amarillo-claro);
+  margin-left: 5%;
+  padding: 10px;
   box-sizing:border-box;
+  border-radius: 10px;
+  box-shadow: -4px -4px 0 var(--magenta) inset;
 }
 
-.capa-slide-show{
-  height: 100%;
+#juegos-populares-lista{
+  margin: 0;
+  padding: 0;
+}
+
+.juegos-populares-lista-juego{
+  padding: 0;
+  list-style: none;
   width: 100%;
+  height: 80px;
+  margin-bottom: 10px;
+  background: var(--amarillo);
+  border-radius: 10px;
+  box-shadow: -4px -4px 0 var(--magenta-claro) inset;
 }
 
-.caja-grande-slide-show{
-  width: 66.66%;
+.juegos-populares-lista-juego img{
   height: 100%;
+  float:left;
+  border-radius: 10px 0 0 10px;
+}
+
+.lista-juego-info{
   float: left;
   position: relative;
-}
-
-.caja-grande-slide-show .portada{
   height: 100%;
-}
-
-.vidrio-grande{
-  display: block;
-  position: absolute;
-  height: 40%;
-  width: 100%;
-  overflow: hidden;
-  bottom:0;
-  z-index: 0;
-  background-color: var(--gris);
-}
-
-.vidrio-grande img{
-  position: relative;
-  width: 100%;
-  top: -140%;
-  filter: blur(10px);
-  opacity: 0.5;
-}
-
-.info-grande-slideshow{
-  position: absolute;
-  width: 100%;
-  height: 40%;
-  bottom: 0;
-  z-index:1;
-  color: var(--amarillo);
   overflow: hidden;
 }
 
-.caja-grande-slide-show::after{
-  content:'';
-  box-shadow: -2px 4px 0 inset var(--blanco);
-  position: absolute;
-  display: block;
-  height: 100%;
-  width: 100%;
-  top: 0;
-}
-
-.caja-chica-slide-show{
-  position: relative;
-  width: 33.33%;
-  height: 50%;
-  background: green;
-  float: left;
-  overflow: hidden;
-}
-
-.caja-chica-slide-show .portada{
-  height: 100%;
+.lista-juego-info h4, .lista-juego-info p{
+  padding: 0;
+  margin: 10px;
 }
 
 
-.caja-chica-slide-show::after{
-  content:'';
-  box-shadow: 2px 4px 0 inset var(--blanco);
-  position: absolute;
-  display: block;
-  height: 100%;
-  width: 100%;
-  top:0;
+main{
+  height: 1000px;
 }
-
-.info-chico-slideshow{
-  position: absolute;
-  width: 100%;
-  height: 25%;
-  bottom: 0;
-  z-index:1;
-  color: var(--magenta);
-  overflow: hidden;
-}
-
-.vidrio-chico{
-  display: block;
-  position: absolute;
-  height: 25%;
-  width: 100%;
-  overflow: hidden;
-  bottom:0;
-  z-index: 0;
-  background-color: var(--gris);
-}
-
-.vidrio-chico img{
-  position: relative;
-  width: 100%;
-  top: -300%;
-  filter: blur(10px);
-  opacity: 0.5;
-}
-
-
-
-
-
-
-
-
-@media only screen and (max-width: 600px){
-  .info{
-    display: none;
-  }
-  .bloques_slide{
-    width: 90%;
-    height: auto;
-    margin: auto;
-  }
-  
-  .bloques_slide a{
-    width: 100%;
-    height: 100%;
-    color: var(--color4);
-  }
-  
-  .bloques_slide img{
-    max-width: 100%;
-    border-radius: 10px;
-  }
-  
-  .izq{
-    left:0px;
-    border-radius: 10px;
-  }
-  .der{
-    right: 0px;
-    border-radius: 10px;
-  }
-  
-}
-
-@media (min-width: 601px) and (max-width: 1024px) {
-  .bloques_slide{
-    width: 100%;
-  }
-  .bloques_slide img{
-    float: right;
-    display: block;
-    margin: auto;
-    max-width: 30%;
-    height: auto;
-    border-radius: 10px;
-  }
-  .info{
-    display: block;
-    max-width: 60%;
-    float: none;
-    font-size: 0.8em;
-  }
-  button{
-    width: 50px;
-  }
-  .izq{
-    left: 100px;
-    top: 100%;
-    border-radius: 10px;
-  }
-  .der{
-    right: 100px;
-    top:100%;
-    border-radius: 10px;
-  }
-}
-
-
-
