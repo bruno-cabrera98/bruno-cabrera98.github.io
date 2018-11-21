@@ -8,28 +8,29 @@ h1{
 }
 
 .caja-comentario{
+  position: relative;
   margin-bottom: 10px;
   border-radius: 10px;
-  padding: 10px;
-  background-color: var(--color1);
-  box-shadow: 0 0 4px var(--color3) inset;
+  padding: 10px 10px 0px 10px;
+  background-color: var(--azul-claro);
+  box-shadow: -4px -4px 0px var(--azul) inset;
   transition: 0.2s;
 }
 
 .caja-comentario:hover{
-  box-shadow: 0 0 10px var(--color3) inset;
+  box-shadow: -4px -4px 0px var(--gris) inset;
 }
 
 .comentario{
-  padding: 0px 10px 0px 10px;
+  padding: 0px 10px 40px 10px;
   margin: 10px 10px;
 }
 
 .usuario{
   display: inline-block;
-  background-color: var(--color4);
+  background-color: var(--amarillo-claro);
   border-radius: 10px 40px 40px 40px;
-  box-shadow: 0 0 10px var(--color3);
+  box-shadow: -4px -4px 0px var(--amarillo) inset;
   height: 50px;
   padding: 5px 10px;
 }
@@ -44,12 +45,29 @@ h1{
   float: left;
   margin: 0 0px 0px 10px; 
   line-height: 50px;
-  color: var(--color1);
+  color: var(--negro);
+}
+
+.comentario {
+  margin-bottom: 10px;
 }
 
 .fecha-comentario{
-  text-align:end;
-  margin: 0px 10px
+  transition: inherit;
+  position: absolute;
+  display: block;
+  margin: 0;
+  color: var(--blanco);
+  width: 140px;
+  text-align: center;
+  right: 0px;
+  bottom: 0px;
+  background-color: var(--azul);
+  border-radius: 10px 0 10px 0;
+}
+
+.caja-comentario:hover .fecha-comentario {
+  background-color: var(--gris);
 }
 
 form{
@@ -67,39 +85,42 @@ input, textarea{
   padding: 10px;
   font-family: inherit;
   font-size: inherit;
-  background-color: var(--color1);
-  box-shadow: 0 0 4px var(--color3) inset;
+  background-color: var(--amarillo);
+  box-shadow: -4px -4px 0px var(--magenta-claro) inset;
   transition: 0.2s;
-  color:var(--color4);
+  color:var(--negro);
 }
 
 input:hover, textarea:hover{
-  box-shadow: 0 0 10px var(--color3) inset;
+  box-shadow: -4px -4px 0px var(--magenta) inset;
+  background-color: var(--amarillo-claro)
 }
 
 input:focus, textarea:focus{
-  box-shadow: 0 0 4px var(--color5) inset;
+  box-shadow: -4px -4px 0px var(--azul) inset;
+  background-color: var(--amarillo-claro)
 }
 
 button{
   display: block;
   border-style: none;
   padding: 10px 20px;
-  background-color: var(--color1);
-  box-shadow: 0 5px 5px var(--color3);
+  background-color: var(--amarillo);
+  box-shadow: -4px -4px 0px var(--magenta-claro) inset;
   border-radius: 10px;
   transition: all 0.2s;
   font-family: inherit;
   font-size: inherit;
-  color:var(--color4);
+  color:var(--negro);
 }
 
 button:hover{
-  box-shadow: 0 2px 2px var(--color3);
+  box-shadow: -4px -4px 0px var(--magenta) inset;
+  background-color: var(--amarillo-claro);
 }
 
 button:focus{
-  box-shadow: 0 2px 2px var(--color3) inset;
+  box-shadow: -4px -4px 0px var(--azul) inset;
 }
 
 @media only screen and (max-width: 600px){
@@ -124,6 +145,10 @@ button:focus{
   button{
     width: 50%;
     margin: auto;
+  }
+  
+  .fecha-comentario{
+    padding: 2px;
   }
 }
 

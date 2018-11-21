@@ -7,7 +7,6 @@
   <meta name="description" content="Página inicio del proyecto de Jóvenes a Programar.">
   <link rel="stylesheet" href="styles/stylesheet.css">
   <link rel="stylesheet" href="styles/inicio.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Entrega 1 - Inicio</title>
 </head>
 
@@ -15,7 +14,7 @@
   <header>
     <div id="logo">
       <a href="index.html">
-        <img src="img/header.svg" alt="Logo de la web">
+        <img src="img/logo.png" alt="Logo de la web">
       </a>
     </div>
     <nav class="menu">
@@ -28,65 +27,48 @@
   <main>
     <h1>Bienvenidos a Jap Games!</h1>
     <h3>Juegos destacados de esta semana</h3>
-    <div class="slideshow">
-      <div class="bloques_slide">
-        <img src="img/monkey-island.jpg">
-        <div class="info">
-          <h3>Monkey Island</h3>
-          <p>El juego comienza en una isla caribeña llamada Monkey Island, donde un joven llamado Guybrush Threepwood quiere
-            ser pirata. Para ello, busca a los líderes pirata de la zona, quienes le encomiendan tres desafíos que le permitirán
-            convertirse en uno de ellos: derrotar a Carla, la maestra de esgrima, en un duelo de espadas e insultos; robar
-            una estatua de la mansión de la Gobernadora; y encontrar un tesoro enterrado.
-
-            <p>Categoria 1 - Categoria 2 - Categoria 3</p>
-            <p>Windows - Linux</p>
-            <p>$16.99</p>
+    <div class="slide-show">
+        <div class="capa-slide-show">
+            <div class="caja-grande-slide-show">
+                <img src="img/space-questI.jpg" class="portada">
+                <div class="vidrio-grande">
+                    <img src="img/space-questI.jpg" >
+                </div>
+                <div class="info-grande-slideshow">
+                    <h1 class="nombre-grande-slideshow">
+                        Space Quest I
+					</h1>
+                </div>
+            </div>
+            <div class="caja-chica-slide-show">
+				<img src="img/space-questII.jpg"  class="portada">
+                <div class="vidrio-chico">
+                    <img src="img/space-questII.jpg" >
+                </div>
+                <div class="info-chico-slideshow">
+                    <h1 class="nombre-chico-slideshow">
+                        Space Quest I
+					</h1>
+                </div>
+            </div>
+			<div class="caja-chica-slide-show">
+				<img src="img/space-questIII.jpg" class="portada">
+			</div>
         </div>
-      </div>
-      <div class="bloques_slide">
-        <img src="img/space-questI.jpg">
-        <div class="info">
-          <h3>Space Quest I</h3>
-          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-          <p>Categoria 1 - Categoria 2 - Categoria 3</p>
-          <p>Windows - Linux</p>
-          <p>$17.99</p>
-        </div>
-      </div>
-      <div class="bloques_slide">
-        <img src="img/space-questII.jpg">
-        <div class="info">
-          <h3>Space Quest II</h3>
-          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-          <p>Categoria 1 - Categoria 2 - Categoria 3</p>
-          <p>Windows - Linux</p>
-          <p>$18.99</p>
-        </div>
-      </div>
-      <div class="bloques_slide">
-        <img src="img/space-questIII.jpg">
-        <div class="info">
-          <h3>Space Quest III</h3>
-          <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
-          <p>Categoria 1 - Categoria 2 - Categoria 3</p>
-          <p>Windows - Linux</p>
-          <p>$19.99</p>
-        </div>
-      </div>
-      <button class="izq" onclick="ant()"></button>
-      <button class="der" onclick="sig()"></button>
     </div>
-    <script src="js/slideshow.js"></script>
   </main>
+  <footer>
+    <ul class="nav-footer">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="sub/catalogo.html">Catálogo</a></li>
+      <li><a href="sub/consultas.html">Consultas</a></li>
+      <li><a href="sub/registro.html">Registro</a></li>  
+    </ul>
+    <div class="info-personal">
+      <p>Bruno Cabrera Martínez</p>
+      <p>2018 - Jóvenes a Programar</p>
+    </div>
+  </footer>
 </body>
 
 </html>

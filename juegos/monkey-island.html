@@ -7,11 +7,86 @@
   <meta name="description" content="Página para juego del proyecto de Jóvenes a Programar.">
   <link rel="stylesheet" href="../styles/stylesheet.css">
   <link rel="stylesheet" href="../styles/juego.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Entrega 1 - The Curse of Monkey Island</title>
+  <script src="../js/slide.js"></script>
+  <script src="../js/carrito.js"></script>
+
 </head>
 
+
 <body>
+  <div id="carro-cubrepantallas">
+    <div id="carro">
+      <div id="info-carro">
+        <img src="img/c-o-monkey-island-portada.jpg" alt="Foto de portada">
+        <h3>The Curse of Monkey Island</h3>
+
+      </div>
+      <button id="cerrar-carro"></button>
+      <form id="form-compra">
+        <div id="form-compra-izq">
+          <div id="cantidad">
+            <label for="cantidad-i">Cantidad</label>
+            <div id="cantidad-i">
+              <button type="button" id="cantidad-menos">-</button>
+              <input type="number" min="0" max="30" id="cantidad-input" value="1">
+              <button type="button" id="cantidad-mas">+</button>
+            </div>
+          </div>
+          <div id="medio-de-pago">
+            <label for="medio-de-pago-i">Medio de pago</label>
+            <select name="medio-de-pago-i">
+              <option value="mastercard">Mastercard</option>
+              <option value="oca">Oca</option>
+            </select>
+          </div>
+          <div id="tipo-de-juego">
+            <label for="tipo-de-juego-i">Tipo de juego</label>
+            <select name="tipo-de-juego-i" id="tipo-de-juego-i">
+              <option value="fisico">Físico</option>
+              <option value="digital" selected>Digital</option>
+            </select>
+          </div>
+          <div id="tipo-de-envio">
+            <label for="tipo-de-envio-i">Tipo de envío</label>
+            <select name="tipo-de-envio-i">
+              <option value="comun">Común</option>
+              <option value="especial">Especial</option>
+              <option value="premium">Premium</option>
+            </select>
+          </div>
+        </div>
+        <div id="form-compra-der">
+          <div id="nombre">
+            <label for="nombre-i">Nombre</label>
+            <input type="text" id="nombre-i" required>
+          </div>
+          <div id="email" class="cambiante no-input">
+            <label for="email-i">E-mail</label>
+            <input type="email" id="email-i" disabled required>
+          </div>
+          <div id="direccion" class="cambiante no-input" >
+            <label for="direccion-i">Dirección</label>
+            <input type="text" id="direccion-i" disabled required>
+          </div>
+          <button type="submit" id="comprar">Comprar!</button>
+        </div>
+      </form>
+      <div id="platita">
+        <p>Precio sin impuestos: $
+          <span id="precio-sin-impuestos">12</span>
+        </p>
+        <p>Precio con impuestos: $
+          <span id="precio-con-impuestos">12</span>
+        </p>
+        <div id="platita-tipo-juego">
+          <p id="platita-juego-digital">Juego Digital</p>
+          <p id="platita-juego-fisico">Juego Físico</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
   <header>
     <div id="logo">
       <a href="../index.html">
@@ -27,89 +102,70 @@
 
   </header>
   <main>
-    <div id="info">
-      <div id="titulo">
-        <h2>
-          The curse of
-        </h2>
-        <h1>
-          Monkey Island
-        </h1>
+    <div id="caja-juego">
+      <h1>The Curse of Monkey Island</h1>
+      <div id="slide-show">
+        <button type="button" id="ant"></button>
+        <div id="imagenes">
+          <img src="img/c-o-monkey-island-1.jpg" class="imagen">
+          <img src="img/c-o-monkey-island-2.jpg" class="imagen">
+          <img src="img/c-o-monkey-island-3.jpg" class="imagen">
+          <img src="img/c-o-monkey-island-4.jpg" class="imagen">
+          <img src="img/c-o-monkey-island-5.jpg" class="imagen">
+        </div>
+        <button type="button" id="prox"></button>
       </div>
-      <div class="columna-der">
-        <h3>The curse of Monkey Island</h3>
-        <img src="img/c-o-monkey-island-portada.jpg" alt="foto de portada">
-          <div class="info_columna">
-            <div id="estrellas">
-              <a href="#1">
-                <img src="img/estrella-amarilla.svg" alt="estrella">
-              </a>
-              <a href="#2">
-                <img src="img/estrella-amarilla.svg" alt="estrella">
-              </a>
-              <a href="#3">
-                <img src="img/estrella-amarilla.svg" alt="estrella">
-              </a>
-              <a href="#4">
-                <img src="img/estrella-amarilla.svg" alt="estrella">
-              </a>
-              <a href="#5">
-                <img src="img/estrella-amarilla.svg" alt="estrella">
-              </a>
-              <a href="#6">
-                <img src="img/estrella-amarilla.svg" alt="estrella">
-              </a>
-              <a href="#7">
-                <img src="img/estrella-amarilla.svg" alt="estrella">
-              </a>
-              <a href="#8">
-                <img src="img/estrella-amarilla.svg" alt="estrella">
-              </a>
-              <a href="#9">
-                <img src="img/estrella-amarilla.svg" alt="estrella">
-              </a>
-              <a href="#10">
-                <img src="img/estrella-gris.svg" alt="estrella">
-              </a>
-              <p>- 9/10 estrellas</p>
-            </div>
-            <div id="detalles">
-                <p>
-                  Aventura - Point-and-click - Fantasia
-                </p>
-                <p>
-                  Sistemas Operativos: Windows (7, 8, 10) y Mac OS X (10.9+)
-                </p>
-            </div>
-            <div id="compra">
-              <p>Precio: $15.99</p>
-              <button>Comprar!</button>
-            </div>
-          </div>
+      <div id="envoltorio-info">
+        <div id="info">
 
+          <h2>The Curse of Monkey Island</h2>
+          <div id="estrellas">
+            <a href="#1">
+              <img src="img/estrella-amarilla.svg" alt="estrella">
+            </a>
+            <a href="#2">
+              <img src="img/estrella-amarilla.svg" alt="estrella">
+            </a>
+            <a href="#3">
+              <img src="img/estrella-amarilla.svg" alt="estrella">
+            </a>
+            <a href="#4">
+              <img src="img/estrella-amarilla.svg" alt="estrella">
+            </a>
+            <a href="#5">
+              <img src="img/estrella-amarilla.svg" alt="estrella">
+            </a>
+            <a href="#6">
+              <img src="img/estrella-amarilla.svg" alt="estrella">
+            </a>
+            <a href="#7">
+              <img src="img/estrella-amarilla.svg" alt="estrella">
+            </a>
+            <a href="#8">
+              <img src="img/estrella-amarilla.svg" alt="estrella">
+            </a>
+            <a href="#9">
+              <img src="img/estrella-amarilla.svg" alt="estrella">
+            </a>
+            <a href="#10">
+              <img src="img/estrella-gris.svg" alt="estrella">
+            </a>
+            <p>- 9/10 estrellas</p>
+          </div>
+          <div id="categorias">
+            <p>Categorias:</p>
+            <p> Aventuras / Point-and-click / Fantasía</p>
+          </div>
+          <h3 id="info-precio">$19.9 </h3>
+          <button type="button" id="boton-comprar">Comprar!</button>
+        </div>
       </div>
-      <div class="slideshow">
-        <button class="izq" onclick="ant()"></button>
-        <div class="bloques_slide">
-          <img  src="img/c-o-monkey-island-1.jpg" alt="Primer Foto">
-        </div>
-        <div class="bloques_slide">
-            <img  src="img/c-o-monkey-island-2.jpg" alt="Segunda Foto">
-        </div>
-        <div class="bloques_slide">
-            <img  src="img/c-o-monkey-island-3.jpg" alt="Tercera Foto">
-        </div>
-        <div class="bloques_slide">
-            <img  src="img/c-o-monkey-island-4.jpg" alt="Cuarta Foto">
-        </div>
-        <div class="bloques_slide">
-            <img  src="img/c-o-monkey-island-5.jpg" alt="Quinta Foto">
-        </div>
-        <button class="der" onclick="sig()"></button>
-      </div>
+
     </div>
-   
-    <script src="../js/slideshow.js"></script>
+
+
+
+
 
     <article>
       <header>
@@ -133,17 +189,63 @@
       </body>
     </article>
     <article class="caja-specs">
-      <p>Requisitos</p>
-      <ul>
-        <li>Sistema Operativo : Windows (7, 8, 10) y Mac OS X (10.9+)</li>
-        <li>Cpu: 1.8 GHz</li>
-        <li>Memoria: 1 GB RAM</li>
-        <li>Internet: No requiere</li>
-        <li>Grafica: Tarjeta gráfica 3D compatible con DirectX 9.0c y 256 MB VRAM</li>
-        <li>Almacenamiento: 1GB </li>
-      </ul>
+      <header>
+	<h2>Requisitos</h2>
+      </header>
+      <body>
+	<dl id="caja-specs-recomendados">
+        <h3>Recomendados</h3>
+	  <dt>Sistema Operativo:</dt>
+	  <dd>Windows (7,8,10) y Mac OS Z (10.9+)</dd>
+	  <dt>CPU:</dt>
+	  <dd>1.8 GHz</dd>
+	  <dt>Memoria Ram:</dt>
+	  <dd>1 GB</dd>
+	  <dt>Internet:</dt>
+	  <dd>No requiere</dd>
+	  <dt>Grafica:</dt>
+	  <dd>Compatible con DirectX 9.0c y 256 MB</dd>
+	  <dt>Almacenamiento:</dt>
+	  <dd>1GB</dd>
+	</dl>
+		<dl id="caja-specs-minimos">
+        <h3>Minimos</h3>
+	  <dt>Sistema Operativo:</dt>
+	  <dd>Windows (7,8,10) y Mac OS Z (10.9+)</dd>
+	  <dt>CPU:</dt>
+	  <dd>1.8 GHz</dd>
+	  <dt>Memoria Ram:</dt>
+	  <dd>1 GB</dd>
+	  <dt>Internet:</dt>
+	  <dd>No requiere</dd>
+	  <dt>Grafica:</dt>
+	  <dd>Compatible con DirectX 9.0c y 256 MB</dd>
+	  <dt>Almacenamiento:</dt>
+	  <dd>1GB</dd>
+	</dl>
+	</body>
     </article>
   </main>
+  <footer>
+    <ul class="nav-footer">
+      <li>
+        <a href="../index.html">Inicio</a>
+      </li>
+      <li>
+        <a href="../sub/catalogo.html">Catálogo</a>
+      </li>
+      <li>
+        <a href="../sub/consultas.html">Consultas</a>
+      </li>
+      <li>
+        <a href="../sub/registro.html">Registro</a>
+      </li>
+    </ul>
+    <div class="info-personal">
+      <p>Bruno Cabrera Martínez</p>
+      <p>2018 - Jóvenes a Programar</p>
+    </div>
+  </footer>
 </body>
 
 </html>

@@ -8,11 +8,11 @@ h1{
   margin: 0px 0px 20px 10px;
   padding: 10px;
   border-radius: 40px;
-  background-color: var(--color1);
+  background-color: var(--azul-claro);
   cursor: pointer;
   font-size: 17px;
-  box-shadow: 0 4px 4px var(--color3);
-  transition: 0.2s;
+  box-shadow: -4px -4px 0px var(--azul) inset;
+  transition: 0.2s; 
 }
 
 .desplegador{
@@ -23,14 +23,14 @@ h1{
 .desplegador ul{
   display: none;
   position: absolute;
-  background-color: var(--color1);
-  min-width: 140px;
-  box-shadow: 0px 0px 10px -3px var(--color3);
+  background-color: var(--azul-claro);
+  min-width: 160px;
+  box-shadow: -4px -4px 0px var(--magenta) inset;
   z-index: 1;
   margin-top: 0px;
   margin-left: 10px;
   padding: 10px;
-  border-radius: 20px
+  border-radius: 20px;
 }
 
 .desplegador li{
@@ -40,8 +40,8 @@ h1{
 }
 
 .desplegador:hover p{
-  box-shadow: 0 4px 10px var(--color3);
-  background-color: var(--color3)
+  box-shadow: -4px -4px 0px var(--magenta) inset;
+  background-color: var(--azul-claro);
 }
 
 .desplegador:hover ul {
@@ -58,19 +58,19 @@ h1{
   display: block;
   float: right;
   border-radius: 40px;
-  background-color: var(--color1);
-  box-shadow: 0 4px 4px var(--color3);
+  background-color: var(--azul-claro);
+  box-shadow: -4px -4px 0px var(--azul) inset;
   width: 320px;
   margin-right: 10px;
   transition: 0.2s;
 }
 
 #buscador:hover{
-  box-shadow: 0 4px 10px var(--color3);
+  box-shadow: -4px -4px 0px var(--magenta) inset;
 }
 
 #buscador img{
-  background-color: var(--color1);
+  background-color: transparent;
   border-radius: 100% 0 0 100%;
   float: left;
   height: 43px;
@@ -79,7 +79,6 @@ h1{
 }
 
 #buscador img:hover{
-  background-color: var(--color3);
   cursor: pointer;
 }
 
@@ -89,9 +88,9 @@ h1{
   height: 23px;
   margin: 0px 0px 0px 0px;
   padding: 10px;
-  background-color: var(--color1);
+  background-color: transparent;
   font-size: 17px;
-  
+  color: var(--negro);
 }
 
 /*Catalogo*/
@@ -107,16 +106,15 @@ h1{
   display: inline-block;
   border-radius: 10px;
   list-style: none;
-  background-color: var(--color1);
+  background: linear-gradient(var(--azul)20%,var(--azul-claro)60%, var(--azul-claro) );
   width: 240px;
   margin: 10px;
-  box-shadow: 0 0px 10px var(--color3);
+  box-shadow: 0px -4px 0 var(--azul) inset;
   transition: 0.5s;
 }
 
 .bloque:hover {
-  filter: brightness(1.1);
-  box-shadow: 0 0px 100px var(--color3);
+  box-shadow: 0px -4px 0 var(--magenta) inset;
 }
 
 .bloque a{
@@ -124,13 +122,14 @@ h1{
   width:100%;
   height:100%;
   text-decoration: none;
-  color: var(--color4);
+  color: var(--negro);
 }
 
 .bloque h1{
-  font-size: 1em;
+  font-size: .9em;
   text-align: center;
   margin: 5px;
+  color: var(--blanco);
 }
 
 .bloque img{
@@ -141,6 +140,7 @@ h1{
 .info{
   margin: 0px 10px;
   text-align: center;
+  color: var(--negro);
 }
 
 .categoria{
@@ -149,14 +149,19 @@ h1{
 }
 
 .precio{
-  color: var(--color1);
+  color: var(--negro);
   display: inline-block;
   text-align: center;
   margin: 0px;
   padding: 10px;
-  background-color: var(--color5);
+  background-color: var(--azul-claro);
   border-radius: 20px 20px 0px 0;
-  box-shadow: 0 0px 5px var(--color3);
+  box-shadow: -4px 4px 0 var(--azul) inset, 4px 4px 0 var(--azul) inset;
+  transition: 0.5s;
+}
+
+.bloque:hover .precio{
+  box-shadow: -4px 4px 0 var(--magenta) inset, 4px 4px 0 var(--magenta) inset;
 }
 
 @media screen and (max-width: 600px){
@@ -185,6 +190,9 @@ h1{
     margin: auto;
     width: 90%;
   }
+  #buscador input{
+    width: 65%;
+  }
   
 }
 
@@ -193,7 +201,7 @@ h1{
     width: 30%
   }
   #buscador input{
-    width: 45%
+    width: 55%
   }
 }
 
