@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
             main_picture[i].innerHTML = "<img src='" + request.response.juegos[0].main_picture + "' alt='Foto portada'>";
         }
         for(let i = 0; i < other_pictures.length; i++){
-            other_pictures[i].innerHTML = "<img src='" + request.response.juegos[0].other_pictures + "' alt='Foto del juego'>";
+            other_pictures[i].innerHTML = "<img src='" + request.response.juegos[0].other_pictures[i] + "' alt='Foto del juego'>";
         }
     }
 });
