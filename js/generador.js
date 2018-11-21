@@ -9,6 +9,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
         let l_desc = document.getElementsByClassName("l_desc");
         let main_picture = document.getElementsByClassName("main_picture");
         let other_pictures = document.getElementsByClassName("imagen");
+        let score_stars = document.getElementsByClassName("estrella");
+        let score = document.getElementById("puntos")
         for(let i = 0; i < name.length; i++){
             name[i].innerHTML = request.response.juegos[0].name;
         }
@@ -21,5 +23,17 @@ document.addEventListener("DOMContentLoaded", function (event) {
         for(let i = 0; i < other_pictures.length; i++){
             other_pictures[i].innerHTML = "<img src='" + request.response.juegos[0].other_pictures[i] + "' alt='Foto del juego'>";
         }
+        for(let i = 0; i < score_stars.length; i++){
+            if (i < request.response.juegos[0].score){
+                score_stars[i].innerHTML = "<img src='img/estrella-amarilla.svg' alt='estrella-dorada'></img>"
+            }
+            else{
+                score_stars[i].innerHTML = "<img src='img/estrella-gris.svg' alt='estrella-gris'></img>"
+            }
+        }
+        score.innerHTML = request.response.juegos[0].score;
+        
+
+        
     }
 });
