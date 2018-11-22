@@ -202,6 +202,7 @@ article header{
   width: 100%;
   border-radius: 10px 10px 0 0;
   overflow: hidden;
+  position: relative;
 }
 
 #info-carro img{
@@ -217,6 +218,30 @@ article header{
   display: block;
   color: var(--blanco);
   text-shadow: 2px 2px 0 var(--magenta);
+  margin: 10px 0 0 0;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+#info-carro p{
+  padding-left: 10px;
+  float: left;
+  width: 50%;
+  margin: 0;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+#info-carro .price{
+  width: 80px;
+  position: absolute;
+  font-size: 20px;
+  font-weight: 1000;
+  color: var(--blanco);
+  text-shadow: 2px 2px 0px var(--magenta);
+  bottom: 10px;
+  right: 0px;
+  z-index: 2;
 }
 
 #cerrar-carro{
