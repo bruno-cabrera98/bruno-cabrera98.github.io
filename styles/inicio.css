@@ -55,6 +55,11 @@ h1,h3{
   background-position: 17px 10px;
 }
 
+.ant:hover,.sig:hover{
+  background-color:var(--azul);
+  box-shadow: -4px -4px 0 var(--azul-claro) inset;
+}
+
 .slider{
   position: relative;
   width: 90%; 
@@ -99,6 +104,13 @@ h1,h3{
   box-shadow: -4px -4px 0 var(--magenta) inset;
 }
 
+.juegos-populares-lista-juego a{
+  display: block;
+  height: 100%;
+  width: 100%;
+  color: var(--negro);
+}
+
 #juegos-populares-lista{
   margin: 0;
   padding: 0;
@@ -113,7 +125,14 @@ h1,h3{
   background: var(--amarillo);
   border-radius: 10px;
   box-shadow: -4px -4px 0 var(--magenta-claro) inset;
+  transition: 0.5s;
 }
+
+.juegos-populares-lista-juego:hover{
+  background: var(--azul-claro);
+  box-shadow: -4px -4px 0 var(--azul) inset;
+}
+
 
 .juegos-populares-lista-juego img{
   height: 100%;
