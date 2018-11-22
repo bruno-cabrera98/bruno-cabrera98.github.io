@@ -62,7 +62,7 @@ h1,h3{
 
 .slider{
   position: relative;
-  width: 90%; 
+  width:90%; 
   margin: auto ;
   box-sizing: border-box;
 }
@@ -153,6 +153,20 @@ h1,h3{
 }
 
 
-main{
-  height: 1200px;
+
+
+
+@media (min-width: 601px) and (max-width: 1060px) {
+  #juegos-slider-wrapper{
+    width: 100%;
+  }
+  .juegos-slider{
+    margin:0 auto 50px auto;
+    width: 80%;
+    height: 400px;
+  }
+  .slider{
+    width:400px;
+  }
+
 }
