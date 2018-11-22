@@ -195,8 +195,6 @@ button{
     cursor: pointer !important;
 }
 
-
-
 @media only screen and (max-width: 600px){
   #logo{
     height: 0;
