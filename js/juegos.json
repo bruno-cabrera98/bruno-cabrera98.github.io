@@ -15,26 +15,26 @@
             "score": 9,
             "price": 19.99,
             "categories": [
-                "cat1",
-                "cat2",
-                "cat3"
+                "Aventuras",
+                "Point-and-click",
+                "Fantasía"
             ],
             "requirements": {
                 "minimum": {
-                    "os": "os",
-                    "cpu": "cpu",
-                    "ram": "ram",
-                    "internet": "si o no",
-                    "gpu": "gpu",
-                    "space": "space"
+                    "os": "Windows (7,8,10) y Mac OS Z (10.9+)",
+                    "cpu": "1.1 GHz",
+                    "ram": "250 MB",
+                    "internet": "No requiere",
+                    "gpu": "Compatible con DirectX 9.0c y 128 MB",
+                    "space": "1 GB"
                 },
                 "recomended": {
-                    "os": "os",
-                    "cpu": "cpu",
-                    "ram": "ram",
-                    "internet": "si o no",
-                    "gpu": "gpu",
-                    "space": "space"
+                    "os": "Windows (7,8,10) y Mac OS Z (10.9+)",
+                    "cpu": "1.8 GHz",
+                    "ram": "1 GB",
+                    "internet": "No requiere",
+                    "gpu": "Compatible con DirectX 9.0c y 256 MB",
+                    "space": "4 GB"
                 }
             }
         }
