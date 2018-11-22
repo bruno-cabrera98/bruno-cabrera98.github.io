@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     request.send();
     request.onload = function () { //Carga la página usando el json
         let name = document.getElementsByClassName("titulo");
+        let s_desc = document.getElementsByClassName("s_desc");
         let l_desc = document.getElementsByClassName("l_desc");
         let main_picture = document.getElementsByClassName("main_picture");
         let other_pictures = document.getElementsByClassName("imagen");
@@ -17,6 +18,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
         for (let i = 0; i < name.length; i++) {
             name[i].innerHTML = request.response.juegos[0].name;
+        };
+        for (let i = 0; i < s_desc.length; i++) {
+            s_desc[i].innerHTML = request.response.juegos[0].s_desc;
         };
         for (let i = 0; i < l_desc.length; i++) {
             l_desc[i].innerHTML = request.response.juegos[0].l_desc;
