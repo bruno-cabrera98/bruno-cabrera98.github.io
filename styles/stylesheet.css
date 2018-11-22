@@ -28,19 +28,34 @@
 }
 
 #desplegador{
-  display: none;
   top: 0;
   border: none;
-  position: fixed;
-  height: 80px;
-  width: 80px;
-  background-color: var(--gris);
+  height: 40px;
+  width: 40px;
+  background-color: transparent;
   background-image: url("../img/rayas.svg");
-  background-size: 60px;
-  background-position: 10px 10px;
+  background-size: 30px;
+  background-position: 5px 5px;
   background-repeat: no-repeat;
+  float: left;
+}
+
+#button-wrapper{
+  display: none;
+  position: fixed;
+  height: 40px;
+  width: 140px;
+  background-color: var(--gris);
   z-index:3;
   border-radius: 0 0 10px 0;
+  color: white;
+}
+
+#button-wrapper h2{
+  font-size: 13px;
+  margin-left: 10px;
+  height: 100%;
+  float: left;
 }
 
 #logo a{
@@ -100,6 +115,7 @@ nav{
   background: linear-gradient(90deg, var(--azul)20%, var(--blanco));
   padding: 0;
   overflow: hidden;
+  transition: 1s;
 }
 
 nav a{
@@ -199,17 +215,12 @@ button{
     background: var(--gris);
     border:none;
     width: 50%;
-    padding:80px 10px 10px 10px;
+    padding:50px 10px 10px 10px;
     border-radius: 0 0 10px 0;
     box-shadow: -4px -4px 0 var(--magenta) inset;
     overflow: hidden;
     box-sizing: border-box;
   }
-  
-  
-  /*top: -200px;
-    left: -50%;*/
-
   nav a{
     display: block;
     color: var(--blanco);
@@ -218,7 +229,11 @@ button{
   nav a:hover{
     background: var(--azul);
   }
-  #desplegador{
+  .cerrado{
+    left: -50%;
+  }
+  
+  #button-wrapper{
     display: block;
   }
 

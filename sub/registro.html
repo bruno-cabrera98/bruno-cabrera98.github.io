@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="../styles/stylesheet.css">
   <link rel="stylesheet" href="../styles/registro.css">
   <meta name="viewport" content="width=device-width">
+  <script src="../js/responisve-nav.js"></script>
   <title>Entrega 1 - Registro</title>
 </head>
 
@@ -18,11 +19,15 @@
         <h1><span>J</span>ap games</h1>
       </a>
     </div>
-    <nav>
+    <div id="button-wrapper">
+      <button id="desplegador"></button>
+      <h2>Jap Games</h2>
+    </div>
+    <nav id="menu" class="cerrado">
       <a href="../index.html">Inicio</a>
-      <a href="catalogo.html">Catálogo</a>
+      <a href="catalogo.html" id="apretado">Catálogo</a>
       <a href="consultas.html">Consultas</a>
-      <a href="registro.html" id="apretado">Registro</a>
+      <a href="registro.html">Registro</a>
     </nav>
 
   </header>
@@ -62,7 +67,7 @@
       <li><a href="../index.html">Inicio</a></li>
       <li><a href="catalogo.html">Catálogo</a></li>
       <li><a href="consultas.html">Consultas</a></li>
-      <li><a href="registro.html">Registro</a></li>  
+      <li><a href="registro.html">Registro</a></li>
     </ul>
     <div class="info-personal">
       <p>Bruno Cabrera Martínez</p>

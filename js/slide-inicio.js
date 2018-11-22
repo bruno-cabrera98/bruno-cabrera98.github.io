@@ -71,5 +71,23 @@ document.addEventListener("DOMContentLoaded", function(event){
         pos_slider2 = prox(bloques_slider2,pos_slider2);
     });
 
+
+
+    /* Responsive nav */
+    let nav = document.getElementById("menu");
+    let button = document.getElementById("desplegador");
+    let abierto = false;
+    button.addEventListener("click",function(){
+        if (abierto){
+            nav.classList.add("cerrado");
+            abierto = false;
+        }
+        else{
+            nav.classList.remove("cerrado");
+            abierto = true;
+        }
+        
+    });
+
 })
 
