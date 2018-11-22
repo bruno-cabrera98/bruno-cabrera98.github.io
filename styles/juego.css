@@ -76,7 +76,7 @@
   height: 100%;
 }
 
-#imagenes img{
+.imagen{
   position: absolute;
   height: 95%;
   left: 50%;
@@ -84,6 +84,10 @@
   transform:translate(-50%,-50%);
   transition: 0.5s;
   border-radius: 10px;
+}
+
+.imagen img{
+  height: 100%;
 }
 
 #envoltorio-info{
@@ -324,13 +328,19 @@ article header{
   
 }
 
+#cantidad{
+  height: 69px;
+}
+
 /*Cambio de + y - en input number*/
 #cantidad-i input[type=number] { 
-  display: block;
   float: left;
+  margin: 0;
+  padding: 0 10px;
   -moz-appearance: textfield;
   appearance: textfield;
 }
+
 #cantidad-i input[type=number]::-webkit-inner-spin-button, 
 #cantidad-i input[type=number]::-webkit-outer-spin-button { 
       -webkit-appearance: none; 

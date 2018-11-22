@@ -11,6 +11,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
         let other_pictures = document.getElementsByClassName("imagen");
         let score_stars = document.getElementsByClassName("estrella");
         let score = document.getElementById("puntos");
+        let categories = document.getElementsByClassName("categories");
+        let price = document.getElementsByClassName("price");
         let requirements_type = [document.getElementById("caja-specs-minimos"), document.getElementById("caja-specs-recomendados")];
 
         for (let i = 0; i < name.length; i++) {
@@ -34,6 +36,14 @@ document.addEventListener("DOMContentLoaded", function (event) {
             }
         };
         score.innerHTML = request.response.juegos[0].score;
+        for(let i = 0; i < categories.length; i++){
+            categories[i].innerHTML = request.response.juegos[0].categories[i];
+        }
+        for(let i = 0; i < price.length; i++){
+            price[i].innerHTML = request.response.juegos[0].price;
+        }
+
+        /*requerimientos*/
         let requirements = [request.response.juegos[0].requirements.minimum, request.response.juegos[0].requirements.recomended];
         for (let i = 0; i < 2; i++) {
             requirements_type[i].getElementsByClassName("os")[0].innerHTML = requirements[i].os;
