@@ -39,7 +39,7 @@ input:focus{
   box-shadow: -4px -4px 0px var(--azul) inset;
 }
 
-button{
+form button{
   margin-top: 20px;
   display: block;
   font-family: inherit;
@@ -53,12 +53,12 @@ button{
   color: var(--negro);
 }
 
-button:hover{
+form button:hover{
   box-shadow: -4px -4px 0px var(--magenta) inset;
   background-color: var(--amarillo-claro);
 }
 
-button:focus{
+form button:focus{
   box-shadow: -4px -4px 0px var(--azul) inset;
 }
 
@@ -70,7 +70,7 @@ button:focus{
   input{
     width: 100%;
   }
-  button{
+  form button{
     width: 50%;
     margin:auto;
   }
@@ -85,7 +85,7 @@ button:focus{
   input{
     width: 100%;
   }
-  button{
+  form button{
     width: 50%;
     margin:auto;
   }

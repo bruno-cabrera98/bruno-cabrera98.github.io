@@ -101,7 +101,7 @@ input:focus, textarea:focus{
   background-color: var(--amarillo-claro)
 }
 
-button{
+form button{
   display: block;
   border-style: none;
   padding: 10px 20px;
@@ -114,12 +114,12 @@ button{
   color:var(--negro);
 }
 
-button:hover{
+form button:hover{
   box-shadow: -4px -4px 0px var(--magenta) inset;
   background-color: var(--amarillo-claro);
 }
 
-button:focus{
+form button:focus{
   box-shadow: -4px -4px 0px var(--azul) inset;
 }
 
@@ -142,7 +142,7 @@ button:focus{
   input, textarea {
     width: 100%;
   }
-  button{
+  form button{
     width: 50%;
     margin: auto;
   }
@@ -171,7 +171,7 @@ button:focus{
   input, textarea {
     width: 100%;
   }
-  button{
+  form button{
     width: 50%;
     margin: auto;
   }
