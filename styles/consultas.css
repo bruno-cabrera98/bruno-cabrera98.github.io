@@ -112,6 +112,7 @@ form button{
   font-family: inherit;
   font-size: inherit;
   color:var(--negro);
+  margin: 20px 0;
 }
 
 form button:hover{
@@ -144,7 +145,7 @@ form button:focus{
   }
   form button{
     width: 50%;
-    margin: auto;
+    margin: 40px auto;
   }
   
   .fecha-comentario{
@@ -173,6 +174,6 @@ form button:focus{
   }
   form button{
     width: 50%;
-    margin: auto;
+    margin: 40px auto;
   }
 }
