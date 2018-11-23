@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 		actualizar_valores();
 	});
 	menos.addEventListener("click", function () {
-		if (cantidad.value > 0) {
+		if (cantidad.value > 1) {
 			cantidad.value = cambiar_numero(parseInt(cantidad.value), -1);
 		}
 		actualizar_valores();

@@ -557,9 +557,10 @@ p.no-input{
   }
   #info-carro img{
     border-radius: 0;
+    
   }
   #info-carro{
-    height: 30%;
+    height: 40%;
     border-radius: 0;
   }
   #cerrar-carro{
@@ -612,12 +613,21 @@ p.no-input{
     border-radius: 0;
     overflow: scroll;
   }
+  #info-carro .titulo{
+    position: absolute;
+    width: 100%;
+    bottom:10px;
+  }
   #info-carro img{
+    width: 100%;
+    height: auto;
     border-radius: 0;
   }
   #info-carro{
-    height: 30%;
     border-radius: 0;
+  }
+  #info-carro .s_desc{
+    display: none;
   }
   #cerrar-carro{
     border-radius: 0 0 0 10px;
