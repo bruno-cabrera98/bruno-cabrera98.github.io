@@ -37,6 +37,36 @@
                     "space": "4 GB"
                 }
             }
+        },
+        {
+            "name" : "Space Quest I",
+            "main_picture" : "../img/space-questI.jpg",
+            "price" : 18.99,
+            "categories" : [
+                "Aventuras",
+                "Point-and-click",
+                "Fantasía"
+            ]
+        },
+        {
+            "name" : "Space Quest II",
+            "main_picture" : "../img/space-questII.jpg",
+            "price" : 17.99,
+            "categories" : [
+                "Aventuras",
+                "Point-and-click",
+                "Fantasía"
+            ]
+        },
+        {
+            "name" : "Space Quest III",
+            "main_picture" : "../img/space-questIII.jpg",
+            "price" : 16.99,
+            "categories" : [
+                "Aventuras",
+                "Point-and-click",
+                "Fantasía"
+            ]
         }
     ]
 }
