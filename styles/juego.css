@@ -186,11 +186,10 @@ article header{
 #carro{
   position: relative;
   background: var(--blanco);
-  height: 500px;
+  height: 600px;
   width: 600px;
   top:50%;
   transform: translateY(-50%);
-  
   margin: auto;
   border-radius: 10px;
  }
@@ -200,7 +199,7 @@ article header{
   color: var(--negro);
   height: 200px;
   width: 100%;
-  /*! border-radius: 10px 10px 0 0; */
+  border-radius: 10px 10px 0 0;
   overflow: hidden;
   position: relative;
 }
@@ -208,7 +207,7 @@ article header{
 #info-carro img{
   height: 100%;
   float: left;
-  /*! border-radius: 10px 0 0 0; */
+  border-radius: 10px 0 0 0; 
   box-shadow: 0 0 4px var(--gris);
 }
 
@@ -297,15 +296,10 @@ article header{
   text-align: center;
 }
 
-
-#precio-sin-impuestos{
-  margin: 0;
-}
-
 #form-compra-der{
   position: relative;
   width: 50%;
-  padding: 10px;
+  padding: 10px 10px 10px;
   box-sizing:border-box; 
   float: left;
   text-align: center;
@@ -346,11 +340,16 @@ article header{
   background-size: 5%;
 }
 
-.no-input input{
+.no-input input, .no-input select{
   background: var(--amarillo-claro) !important;
   box-shadow: none !important;
   pointer-events:none !important;
-  
+  color: transparent !important;
+  font-size: 0;
+}
+
+p.no-input{
+  font-size:0
 }
 
 #cantidad{
@@ -426,12 +425,6 @@ article header{
   margin-left: 15%;
 }
 
-#precio-sin-impuestos{
-  display: inline;
-  line-height: 35px;
-  width: 20%;
-}
-
 #form-compra input:hover, #form-compra select:hover{
   box-shadow: -4px -4px 0 var(--magenta) inset;
 }
@@ -448,7 +441,7 @@ article header{
 }
 
 #comprar{
-  margin: 30px 5px;
+  margin: 30px 5px 0 5px;
   height: 35px;
   width: 80%;
   box-sizing:border-box;
@@ -468,54 +461,22 @@ article header{
   box-shadow: -4px -4px 0px var(--azul-claro) inset;
 }
 
-#platita{
-  display:block;
-  position: absolute;
-  background: var(--blanco);
-  width: 220px;
-  text-align: center;
+#info-costos{
+  float: left;
+  position: relative;
+  left: 5%;
+  bottom: 10px;
   padding: 10px;
-  font-size: 12px;
-  border-radius: 0 10px 10px 0;
-  color: var(--magenta);
-  right: -210px;
-  bottom: 0;
-  box-sizing: border-box;  
-  text-align: left;
+  box-sizing: border-box;
 }
 
-#platita::before{
-  content: '';
-  position: absolute;
+#info-costos p{
   display: block;
-  height: 30px;
-  width: 30px;
-  background: transparent;
-  top:-26px;
-  left: 6px;
-  box-shadow: 4px -4px 0 var(--blanco) inset;
-  border-radius: 0 0 0px 10px;
-}
-
-#platita-tipo-juego{
-  background: var(--gris);
-  color: var(--blanco);
-  position: absolute;
+  color: var(--magenta);
   font-weight: 1000;
-  top:-30px;
-  right: 40px;
-  border-radius: 10px 10px 0 0;
-  height: 30px;
-  width: 100px;
+  margin: 5px 0 0 0;
 }
 
-#platita-tipo-juego p{
-  line-height: 10px;
-  width: 100px;
-  height: 30px;
-  position: absolute;
-  text-align: center;
-}
 .caja-specs{
   overflow: auto;
 }
@@ -592,6 +553,7 @@ article header{
     width: 100%;
     height: 100%;
     border-radius: 0;
+    overflow: scroll;
   }
   #info-carro img{
     border-radius: 0;
@@ -604,8 +566,9 @@ article header{
     border-radius: 0 0 0 10px;
   }
   #info-carro p{
-    font-size: 14px;
+    font-size: 12px;
   }
+  
 }
 
 @media only screen and (max-width: 600px){

@@ -1,4 +1,6 @@
+var precio; //variable para usar en el carrito
 document.addEventListener("DOMContentLoaded", function (event) {
+    
     var request = new XMLHttpRequest();
     var url = "https://bruno-cabrera98.github.io/js/juegos.json";
     request.open("GET", url);
@@ -15,6 +17,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
         let categories = document.getElementsByClassName("categories");
         let price = document.getElementsByClassName("price");
         let requirements_type = [document.getElementById("caja-specs-minimos"), document.getElementById("caja-specs-recomendados")];
+
+        precio = request.response.juegos[0].price;
 
         for (let i = 0; i < name.length; i++) {
             name[i].innerHTML = request.response.juegos[0].name;

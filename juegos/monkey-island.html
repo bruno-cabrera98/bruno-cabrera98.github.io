@@ -9,9 +9,9 @@
   <link rel="stylesheet" href="../styles/juego.css">
   <meta name="viewport" content="width=device-width">
   <title>Entrega 1 - The Curse of Monkey Island</title>
+  <script src="../js/generador.js"></script>
   <script src="../js/slide.js"></script>
   <script src="../js/carrito.js"></script>
-  <script src="../js/generador.js"></script>
   <script src="../js/responisve-nav.js"></script>
 
 </head>
@@ -40,21 +40,21 @@
           </div>
           <div id="medio-de-pago">
             <label for="medio-de-pago-i">Medio de pago</label>
-            <select name="medio-de-pago-i">
+            <select name="medio-de-pago-i" onchange="actualizar_valores()">
               <option value="mastercard">Mastercard</option>
               <option value="oca">Oca</option>
             </select>
           </div>
           <div id="tipo-de-juego">
             <label for="tipo-de-juego-i">Tipo de juego</label>
-            <select name="tipo-de-juego-i" id="tipo-de-juego-i">
+            <select name="tipo-de-juego-i" id="tipo-de-juego-i" onchange="actualizar_valores()">
               <option value="fisico">Físico</option>
               <option value="digital" selected>Digital</option>
             </select>
           </div>
-          <div id="tipo-de-envio">
+          <div id="tipo-de-envio" class="cambiante no-input">
             <label for="tipo-de-envio-i">Tipo de envío</label>
-            <select name="tipo-de-envio-i">
+            <select name="tipo-de-envio-i" id="tipo-de-envio-s" onchange="actualizar_valores()">
               <option value="comun">Común</option>
               <option value="especial">Especial</option>
               <option value="premium">Premium</option>
@@ -77,17 +77,10 @@
           <button type="submit" id="comprar">Comprar!</button>
         </div>
       </form>
-      <div id="platita">
-        <p>Precio sin impuestos: $
-          <span id="precio-sin-impuestos"></span>
-        </p>
-        <p>Precio con impuestos: $
-          <span id="precio-con-impuestos"></span>
-        </p>
-        <div id="platita-tipo-juego">
-          <p id="platita-juego-digital">Juego Digital</p>
-          <p id="platita-juego-fisico">Juego Físico</p>
-        </div>
+      <div id="info-costos">
+        <p>Precio sin Impuestos: $<span id="precio-sin-impuestos"></span></p>
+        <p class="cambiante no-input">Costo de envio: $<span id="costo-de-envio"></span></p>
+        <p>Total: $<span id="precio-total"></span></p>
       </div>
     </div>
 
