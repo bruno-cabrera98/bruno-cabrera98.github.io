@@ -164,6 +164,12 @@ article{
   box-shadow: -4px -4px 0 var(--azul) inset;
   margin: 10px;
 }
+article main{
+  background: transparent;
+  box-shadow: none;
+  margin: 0;
+  padding: 10px;
+}
 
 article h2{
   margin: 0;
