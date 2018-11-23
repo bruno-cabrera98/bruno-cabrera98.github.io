@@ -36,7 +36,8 @@
                     "gpu": "Compatible con DirectX 9.0c y 256 MB",
                     "space": "4 GB"
                 }
-            }
+            },
+            "link" : "../juegos/monkey-island.html"
         },
         {
             "name" : "Space Quest I",
@@ -46,7 +47,8 @@
                 "Aventuras",
                 "Point-and-click",
                 "Fantasía"
-            ]
+            ],
+            "link" : "../juegos/space-quest1.html"
         },
         {
             "name" : "Space Quest II",
@@ -56,7 +58,8 @@
                 "Aventuras",
                 "Point-and-click",
                 "Fantasía"
-            ]
+            ],
+            "link" : "../juegos/space-quest2.html"
         },
         {
             "name" : "Space Quest III",
@@ -66,7 +69,8 @@
                 "Aventuras",
                 "Point-and-click",
                 "Fantasía"
-            ]
+            ],
+            "link" : "../juegos/space-quest3.html"
         }
     ]
 }
